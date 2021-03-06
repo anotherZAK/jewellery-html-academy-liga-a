@@ -1,0 +1,16 @@
+.page-header {
+  margin-top: 30px;
+  margin-bottom: 112px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    margin-bottom: 36px;
+  }
+}

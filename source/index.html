@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Украшения, драгоценности, магазин по продаже украшений"/>
+  <meta name="description" content="Украшения, драгоценности, магазин по продаже украшений" />
   <title>Jewellery</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/poppins-regular.woff2" as="font" crossorigin>
@@ -18,7 +18,55 @@
 </head>
 
 <body class="page-body">
-
+  <header class="page-header">
+    <div class="container-edge container-edge--mobile">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="burger" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+        </button>
+        <a class="main-nav__logo">
+          <img src="img/svg/logo.svg" width="66" height="66" alt="Логотип сайта">
+        </a>
+        <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
+          <label>
+            <input class="main-nav__search" id="main-nav-search-id" type="text" name="main-nav-search" placeholder="Type here to search">
+          </label>
+        </form>
+        <a class="main-nav__login">Login</a>
+        <a class="main-nav__cart">Cart <span>0</span></a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">What’s new</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Chokers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Necklaces</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Rings</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Earrings</a>
+          </li>
+          <li class="main-nav__item">
+            <ul class="main-nav__sublist">
+              <li class="main-nav__subitem">
+                <a class="main-nav__sublink" href="">About CH</a>
+              </li>
+              <li class="main-nav__subitem">
+                <a class="main-nav__sublink" href="">Stores & Hours</a>
+              </li>
+              <li class="main-nav__subitem">
+                <a class="main-nav__sublink" href="">Contact Us</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <script src="js/main.js"></script>
 </body>
 

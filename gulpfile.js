@@ -123,9 +123,9 @@ gulp.task(`copy`, function () {
   return gulp.src([
     `source/fonts/**/*.{woff,woff2}`,
     `source/img/png/*`,
-    `source/img/jpg/*`,
+    `source/img/jpg//**/*`,
     `source/img/svg/*`,
-    `source/js/main.js`,
+    // `source/js/main.js`,
     `source//*.ico`
   ], {
     base: `source`
