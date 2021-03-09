@@ -25,15 +25,24 @@
           <span class="visually-hidden">Toggle menu</span>
         </button>
         <a class="main-nav__logo">
-          <img src="img/svg/logo.svg" width="66" height="66" alt="Логотип сайта">
+          <svg class="main-nav__logo-icon" width="66" height="66">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
         </a>
         <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
-          <label>
-            <input class="main-nav__search" id="main-nav-search-id" type="text" name="main-nav-search" placeholder="Type here to search">
-          </label>
+          <label class="visually-hidden" for="main-nav-search-id">Поиск</label>
+          <input class="main-nav__search" id="main-nav-search-id" type="text" name="main-nav-search"
+            placeholder="Type here to search">
+          <svg class="main-nav__search-icon" width="14" height="14">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
         </form>
         <a class="main-nav__login">Login</a>
-        <a class="main-nav__cart">Cart <span>0</span></a>
+        <a class="main-nav__cart"><span class="main-nav__cart-text">Cart <span>0</span></span>
+          <svg class="main-nav__cart-icon" width="18" height="16">
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
+          </svg>
+        </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="">What’s new</a>
@@ -67,6 +76,84 @@
       </nav>
     </div>
   </header>
+  <footer class="page-footer">
+    <div class="container-background container-background--footer">
+      <div class="container-edge container-edge--footer">
+        <div class="container-grid">
+          <section class="newsletter">
+            <h1>The good stuff in your inbox</h1>
+            <p>News and updates from CH. No spam, we promise.</p>
+            <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="get">
+              <label>
+                <input id="newsletter-form-user-email-id" type="email" name="newsletter-form-user-email-id"
+                  placeholder="Your E-mail" required>
+              </label>
+              <button type="submit">Sign up</button>
+              </label>
+              <svg class="newsletter__icon" width="29" height="9">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </form>
+          </section>
+          <section class="about-purchase">
+            <h1 class="visually-hidden">Terms of order, payment and delivery</h1>
+            <ul class="about-purchase__list">
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Ordering & Payment</a></li>
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Terms & Conditions</a></li>
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Returns & Exchanges</a></li>
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Delivery</a></li>
+            </ul>
+          </section>
+          <section class="contacts">
+            <h1 class="visually-hidden">Our contacts</h1>
+            <ul class="contacts__list">
+              <li class="contacts__item"><a class="contacts__link" href="#">About CH</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="#">Stores & Hours</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="#">Jobs</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="#">Contact Us</a></li>
+            </ul>
+          </section>
+          <section class="social-contacts">
+            <h1 class="visually-hidden">Our contacts in social networks</h1>
+            <ul class="social-contacts__list">
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--facebook" width="8" height="15">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="social-contacts__name">Facebook</span>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--instagram" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="social-contacts__name">Instagram</span>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--pinterest" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                  <span class="social-contacts__name">Pinterest</span>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--twitter" width="15" height="13">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="social-contacts__name">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 

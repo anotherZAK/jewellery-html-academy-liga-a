@@ -1,0 +1,19 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: $tablet-width) {
+  .container-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container-grid {
+    display: block;
+  }
+}
