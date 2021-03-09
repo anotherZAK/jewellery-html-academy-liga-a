@@ -1,13 +1,45 @@
 .container-background {
+  &--slogan {
+    height: 463px;
+    background-image: url("../img/png/index-bg-slogan-desktop@1x.png");
+    background-color: #a77a61;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/index-bg-slogan-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+
   &--footer {
     background-color: #000000;
   }
 }
 
 @media (max-width: $tablet-width) {
-
+  .container-background {
+    &--slogan {
+      height: 463px;
+      background-image: url("../img/png/index-bg-slogan-tablet@1x.png");
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/png/index-bg-slogan-tablet@2x.png");
+      }
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
-
+  .container-background {
+    &--slogan {
+      height: 463px;
+      background-image: url("../img/png/index-bg-slogan-mobile@1x.png");
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/png/index-bg-slogan-mobile@2x.png");
+      }
+    }
+  }
 }
