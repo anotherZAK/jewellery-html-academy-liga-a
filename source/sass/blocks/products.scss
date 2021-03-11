@@ -1,0 +1,32 @@
+.products p {
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  color: #1d1613;
+}
+
+.products__link {
+  display: block;
+  text-align: center;
+  color: #221b17;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.products__buttons {
+  text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .products__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
