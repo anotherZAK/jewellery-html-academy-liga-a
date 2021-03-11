@@ -1,0 +1,33 @@
+.catalog-main__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-main__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-main__buttons button {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1d1613;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .catalog-main__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-main__button {
+    display: none;
+  }
+}

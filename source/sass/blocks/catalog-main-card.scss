@@ -1,0 +1,29 @@
+.catalog-main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog-main-card h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #1d1613;
+}
+
+.catalog-main-card p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #1d1613;
+}
+
+.catalog-main-card__link {
+  order: -1;
+}

@@ -1,0 +1,47 @@
+.catalog-filter input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.catalog-filter__item {
+  margin-bottom: -1px;
+  padding-right: 80px;
+  padding-left: 50px;
+  border: 1px solid #a87b62;
+}
+
+.catalog-filter__item div {
+  margin-bottom: 15px;
+}
+
+.catalog-filter__item h3 {
+  margin-left: -30px;
+}
+
+.catalog-filter__item label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #a87b62;
+  }
+}
+
+.catalog-filter input[type="checkbox"]:checked + label {
+  &::before {
+    background-color: #a87b62;
+  }
+}

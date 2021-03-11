@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Украшения, драгоценности, магазин по продаже украшений" />
+  <title>Jewellery</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-medium-italic.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-semi-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" crossorigin>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="container-edge">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="burger" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+        </button>
+        <a class="main-nav__logo">
+          <svg class="main-nav__logo-icon" width="66" height="66">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="visually-hidden" for="main-nav-search-id">Поиск</label>
+          <input class="main-nav__search" id="main-nav-search-id" type="text" name="main-nav-search"
+            placeholder="Type here to search">
+          <svg class="main-nav__search-icon" width="14" height="14">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </form>
+        <a class="main-nav__login">Login</a>
+        <a class="main-nav__cart"><span class="main-nav__cart-text">Cart <span>0</span></span>
+          <svg class="main-nav__cart-icon" width="18" height="16">
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
+          </svg>
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">What’s new</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Chokers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Necklaces</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Rings</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Earrings</a>
+          </li>
+          <li class="main-nav__item">
+            <ul class="main-nav__sublist">
+              <li class="main-nav__subitem">
+                <a class="main-nav__sublink" href="">About CH</a>
+              </li>
+              <li class="main-nav__subitem">
+                <a class="main-nav__sublink" href="">Stores & Hours</a>
+              </li>
+              <li class="main-nav__subitem">
+                <a class="main-nav__sublink" href="">Contact Us</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-background container-background--slogan-catalog">
+      <div class="container-edge">
+        <section class="slogan-catalog">
+          <h1>All jewellery</h1>
+          <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+        </section>
+      </div>
+    </div>
+    <div class="container-edge">
+      <div class="container-grid container-grid--catalog">
+        <section class="catalog-form">
+          <h2 class="visually-hidden">Product selection form</h2>
+          <button class="catalog-form__filter-button btn btn--agree" type="button">Filter</button>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <h3>Product</h3>
+                <div>
+                  <input id="product-filter-necklaces" type="checkbox" name="product-filter-necklaces-id">
+                  <label for="product-filter-necklaces">Necklaces</label>
+                </div>
+                <div>
+                  <input id="product-filter-chokers" type="checkbox" name="product-filter-chokers-id">
+                  <label for="product-filter-chokers">Chokers</label>
+                </div>
+                <div>
+                  <input id="product-filter-rings" type="checkbox" name="product-filter-rings-id">
+                  <label for="product-filter-rings">Rings</label>
+                </div>
+                <div>
+                  <input id="product-filter-earrings" type="checkbox" name="product-filter-earrings-id">
+                  <label for="product-filter-earrings">Earrings</label>
+                </div>
+              </li>
+              <li class="catalog-filter__item">
+                <h3>Material</h3>
+                <div>
+                  <input id="material-filter-gold" type="checkbox" name="material-filter-gold-id">
+                  <label for="material-filter-gold">Gold</label>
+                </div>
+                <div>
+                  <input id="material-filter-silver" type="checkbox" name="material-filter-silver-id">
+                  <label for="material-filter-silver">Silver</label>
+                </div>
+              </li>
+              <li class="catalog-filter__item">
+                <h3>Collection</h3>
+                <div>
+                  <input id="collection-filter-pink-flamingo" type="checkbox" name="collection-filter-pink-flamingo-id">
+                  <label for="collection-filter-pink-flamingo">Pink flamingo</label>
+                </div>
+                <div>
+                  <input id="collection-filter-dreams" type="checkbox" name="collection-filter-dreams-id">
+                  <label for="collection-filter-dreams">Dreams</label>
+                </div>
+              </li>
+              <li class="catalog-filter__item">
+                <h3>Price</h3>
+                <div class="range-filter">
+                  <div class="range-filter__controls">
+                    <div class="range-filter__scale">
+                      <div class="range-filter__bar"></div>
+                    </div>
+                    <div class="range-filter__toggle range-filter__toggle-min" tabindex="0"></div>
+                    <div class="range-filter__toggle range-filter__toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="range-filter__price-controls">
+                    <p class="range-filter__price range-filter__price--min">$ 55</p>
+                    <p class="range-filter__price range-filter__price--max">$ 55</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <input type="submit" value="Apply">
+            <input type="reset" value="Clear All">
+          </form>
+        </section>
+        <section class="catalog-main">
+          <h2 class="visually-hidden">Jewellery catalog</h2>
+          <ul class="catalog-main__list">
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-double-pearl-earrings-mobile@1x.webp 1x, img/jpg/mobile/catalog-double-pearl-earrings-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-double-pearl-earrings-tablet@1x.webp 1x, img/jpg/tablet/catalog-double-pearl-earrings-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-double-pearl-earrings-desktop@1x.webp 1x, img/jpg/desktop/catalog-double-pearl-earrings-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-double-pearl-earrings-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-double-pearl-earrings-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-black-choker-gold-bead-mobile@1x.webp 1x, img/jpg/mobile/catalog-black-choker-gold-bead-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-black-choker-gold-bead-tablet@1x.webp 1x, img/jpg/tablet/catalog-black-choker-gold-bead-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-black-choker-gold-bead-desktop@1x.webp 1x, img/jpg/desktop/catalog-black-choker-gold-bead-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-black-choker-gold-bead-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-black-choker-gold-bead-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-gold-layered-necklace-mobile@1x.webp 1x, img/jpg/mobile/catalog-gold-layered-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-gold-layered-necklace-tablet@1x.webp 1x, img/jpg/tablet/catalog-gold-layered-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-gold-layered-necklace-desktop@1x.webp 1x, img/jpg/desktop/catalog-gold-layered-necklace-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-gold-layered-necklace-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-gold-layered-necklace-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-blue-gemstone-pendant-mobile@1x.webp 1x, img/jpg/mobile/catalog-blue-gemstone-pendant-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-blue-gemstone-pendant-tablet@1x.webp 1x, img/jpg/tablet/catalog-blue-gemstone-pendant-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@1x.webp 1x, img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-boho-earrings-mobile@1x.webp 1x, img/jpg/mobile/catalog-boho-earrings-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-boho-earrings-tablet@1x.webp 1x, img/jpg/tablet/catalog-boho-earrings-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-boho-earrings-desktop@1x.webp 1x, img/jpg/desktop/catalog-boho-earrings-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-boho-earrings-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-boho-earrings-desktop@2x.jpg" alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-bird-necklace-mobile@1x.webp 1x, img/jpg/mobile/catalog-bird-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-bird-necklace-tablet@1x.webp 1x, img/jpg/tablet/catalog-bird-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-bird-necklace-desktop@1x.webp 1x, img/jpg/desktop/catalog-bird-necklace-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-bird-necklace-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-bird-necklace-desktop@2x.jpg" alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-black-leather-choker-necklace-mobile@1x.webp 1x, img/jpg/mobile/catalog-black-leather-choker-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-black-leather-choker-necklace-tablet@1x.webp 1x, img/jpg/tablet/catalog-black-leather-choker-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-black-leather-choker-necklace-desktop@1x.webp 1x, img/jpg/desktop/catalog-black-leather-choker-necklace-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-black-leather-choker-necklace-desktop@1x.jpg" width="270"
+                      height="272" srcset="img/jpg/desktop/catalog-black-leather-choker-necklace-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-purple-gemstone-necklace-mobile@1x.webp 1x, img/jpg/mobile/catalog-purple-gemstone-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-purple-gemstone-necklace-tablet@1x.webp 1x, img/jpg/tablet/catalog-purple-gemstone-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-purple-gemstone-necklace-desktop@1x.webp 1x, img/jpg/desktop/catalog-purple-gemstone-necklace-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-purple-gemstone-necklace-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-purple-gemstone-necklace-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-elephant-earrings-mobile@1x.webp 1x, img/jpg/mobile/catalog-elephant-earrings-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-elephant-earrings-tablet@1x.webp 1x, img/jpg/tablet/catalog-elephant-earrings-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-elephant-earrings-desktop@1x.webp 1x, img/jpg/desktop/catalog-elephant-earrings-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-elephant-earrings-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-elephant-earrings-desktop@2x.jpg" alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-threader-necklace-closeup-mobile@1x.webp 1x, img/jpg/mobile/catalog-threader-necklace-closeup-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-threader-necklace-closeup-tablet@1x.webp 1x, img/jpg/tablet/catalog-threader-necklace-closeup-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@1x.webp 1x, img/jpg/desktop/catalog-threader-necklace-closeup-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-origami-crane-necklace-mobile@1x.webp 1x, img/jpg/mobile/catalog-origami-crane-necklace-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-origami-crane-necklace-tablet@1x.webp 1x, img/jpg/tablet/catalog-origami-crane-necklace-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-origami-crane-necklace-desktop@1x.webp 1x, img/jpg/desktop/catalog-origami-crane-necklace-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-origami-crane-necklace-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-origami-crane-necklace-desktop@2x.jpg"
+                      alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+            <li class="catalog-main__item">
+              <div class="catalog-main-card">
+                <h3>Necklace with amethyst</h3>
+                <p>$ 145</p>
+                <a class="catalog-main-card__link" href="#">
+                  <picture>
+                    <!-- 1х: 130px; 2x: 260px -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/jpg/mobile/catalog-marble-earrings-mobile@1x.webp 1x, img/jpg/mobile/catalog-marble-earrings-mobile@2x.webp 2x">
+                    <!-- 1х: 324px; 2x: 648px -->
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/jpg/tablet/catalog-marble-earrings-tablet@1x.webp 1x, img/jpg/tablet/catalog-marble-earrings-tablet@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp"
+                      srcset="img/jpg/desktop/catalog-marble-earrings-desktop@1x.webp 1x, img/jpg/desktop/catalog-marble-earrings-desktop@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img src="img/jpg/desktop/catalog-marble-earrings-desktop@1x.jpg" width="270" height="272"
+                      srcset="img/jpg/desktop/catalog-marble-earrings-desktop@2x.jpg" alt="Necklace with amethyst">
+                  </picture>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="catalog-main__buttons">
+            <button class="catalog-main__button catalog-main-button--previos" type="button">Previos</button>
+            <div>
+              <button class="catalog-main__button-nav" type="button">1</button>
+              <button class="catalog-main__button-nav" type="button">2</button>
+              <button class="catalog-main__button-nav" type="button">3</button>
+              <button class="catalog-main__button-nav" type="button">4</button>
+              <button class="catalog-main__button-nav" type="button">5</button>
+            </div>
+            <button class="catalog-main__button catalog-main-button--next" type="button">Next</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container-background container-background--footer">
+      <div class="container-edge container-edge--footer">
+        <div class="container-grid container-grid--footer">
+          <section class="newsletter">
+            <h1>The good stuff in your inbox</h1>
+            <p>News and updates from CH. No spam, we promise.</p>
+            <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="get">
+              <label>
+                <input id="newsletter-form-user-email-id" type="email" name="newsletter-form-user-email-id"
+                  placeholder="Your E-mail" required>
+              </label>
+              <button type="submit">Sign up</button>
+              </label>
+              <svg class="newsletter__icon" width="29" height="9">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </form>
+          </section>
+          <section class="about-purchase">
+            <h1 class="visually-hidden">Terms of order, payment and delivery</h1>
+            <ul class="about-purchase__list">
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Ordering & Payment</a></li>
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Terms & Conditions</a></li>
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Returns & Exchanges</a></li>
+              <li class="about-purchase__item"><a class="about-purchase__link" href="#">Delivery</a></li>
+            </ul>
+          </section>
+          <section class="contacts">
+            <h1 class="visually-hidden">Our contacts</h1>
+            <ul class="contacts__list">
+              <li class="contacts__item"><a class="contacts__link" href="#">About CH</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="#">Stores & Hours</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="#">Jobs</a></li>
+              <li class="contacts__item"><a class="contacts__link" href="#">Contact Us</a></li>
+            </ul>
+          </section>
+          <section class="social-contacts">
+            <h1 class="visually-hidden">Our contacts in social networks</h1>
+            <ul class="social-contacts__list">
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--facebook" width="8" height="15">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="social-contacts__name">Facebook</span>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--instagram" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="social-contacts__name">Instagram</span>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--pinterest" width="15" height="15">
+                    <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                  <span class="social-contacts__name">Pinterest</span>
+                </a>
+              </li>
+              <li class="social-contacts__item">
+                <a class="social-contacts__link" href="#">
+                  <svg class="social-contacts__icon social-contacts__icon--twitter" width="15" height="13">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                  <span class="social-contacts__name">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
