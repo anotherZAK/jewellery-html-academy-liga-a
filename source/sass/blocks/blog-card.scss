@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.blog-card img {
+  display: block;
+}
+
 .blog-card__textgroup {
   display: flex;
   flex-direction: column;

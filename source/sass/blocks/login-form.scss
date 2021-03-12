@@ -1,0 +1,92 @@
+.login-form {
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.login-form input {
+  display: block;
+  margin-bottom: 30px;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  width: 100%;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9b9997;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #1d1613;
+}
+
+.login-form input[type="password"] {
+  margin-bottom: 0;
+}
+
+.login-form__forgot-link {
+  display: block;
+  margin-bottom: 50px;
+  text-align: right;
+  font-size: 12px;
+  color: #9b9997;
+}
+
+.login-form button {
+  margin-bottom: 20px;
+}
+
+.login-form__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #1d1613;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.login-form__new {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form__new p {
+  margin: 0;
+  margin-right: 5px;
+  padding-top: 0;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9b9997;
+}
+
+.login-form__new-link {
+  font-size: 14px;
+}
+
+@media (max-width: $mobile-width) { 
+  .login-form {
+    max-width: 88.8%;
+  }
+}

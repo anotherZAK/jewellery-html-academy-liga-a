@@ -1,0 +1,84 @@
+.modal {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+
+  &--show {
+    display: block;
+  }
+
+  &--login {
+    width: 430px;
+    height: 586px;
+    background: #f0eae4;
+    box-shadow: 0px 5px 32px rgba(226, 221, 215, 0.24);
+    background-image: url("../img/jpg/desktop/login-modal-bg-desktop@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 430px 138px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/desktop/login-modal-bg-desktop@2x.jpg");
+      background-size: 430px 138px;
+    }
+  }
+
+  &--login > p {
+    margin: 0;
+    margin-bottom: 45px;
+    padding-top: 198px;
+    text-align: center;
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  &--cart {
+    width: 500px;
+    height: 439px;
+    box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24);
+  }
+
+  &--cart > p {
+    margin: 0;
+    margin-bottom: 55px;
+    padding-top: 55px;
+    text-align: center;
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: $tablet-width) { 
+  .modal {
+    &--login {
+      width: 442px;
+      background-image: url("../img/jpg/tablet/login-modal-bg-tablet@1x.jpg");
+      background-size: 442px 138px;
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/jpg/tablet/login-modal-bg-tablet@2x.jpg");
+        background-size: 442px 138px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) { 
+  .modal {
+    &--login {
+      width: auto;
+      max-width: 442px;
+      background-image: url("../img/jpg/mobile/login-modal-bg-mobile@1x.jpg");
+      background-size: contain;
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/jpg/mobile/login-modal-bg-mobile@2x.jpg");
+        background-size: cover;
+      }
+    }
+  }
+}

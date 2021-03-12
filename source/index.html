@@ -30,7 +30,7 @@
           </svg>
         </a>
         <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="visually-hidden" for="main-nav-search-id">Поиск</label>
+          <label class="visually-hidden" for="main-nav-search-id">Search</label>
           <input class="main-nav__search" id="main-nav-search-id" type="text" name="main-nav-search"
             placeholder="Type here to search">
           <svg class="main-nav__search-icon" width="14" height="14">
@@ -96,7 +96,7 @@
             <div class="product-card">
               <h3>Necklace with amethyst</h3>
               <p>$ 145</p>
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="product-card.html">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)"
@@ -119,14 +119,14 @@
             <div class="product-card">
               <h3>Layered сhoker</h3>
               <p>$ 115</p>
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="product-card.html">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="img/jpg/mobile/index-catalog-layered-choker-mobile@1x.webp 1x, img/jpg/mobile/index-catalog-necklace-with-amethyst-mobile@2x.webp 2x">
+                    srcset="img/jpg/mobile/index-catalog-layered-choker-mobile@1x.webp 1x, img/jpg/mobile/index-catalog-layered-choker-tablet-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
                   <source type="image/webp" media="(max-width: 1023px)"
-                    srcset="img/jpg/tablet/index-catalog-layered-choker-tablet@1x.webp 1x, img/jpg/tablet/index-catalog-necklace-with-amethyst-tablet@2x.webp 2x">
+                    srcset="img/jpg/tablet/index-catalog-layered-choker-tablet@1x.webp 1x, img/jpg/tablet/index-catalog-layered-choker-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <source type="image/webp"
                     srcset="img/jpg/desktop/index-catalog-layered-choker-desktop@1x.webp 1x, img/jpg/desktop/index-catalog-layered-choker-desktop@2x.webp 2x">
@@ -141,7 +141,7 @@
             <div class="product-card">
               <h3>Gold chain</h3>
               <p>$ 215</p>
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="product-card.html">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)"
@@ -163,7 +163,7 @@
             <div class="product-card">
               <h3>Galaxy earrings</h3>
               <p>$ 95</p>
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="product-card.html">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
                   <source type="image/webp" media="(max-width: 767px)"
@@ -568,6 +568,27 @@
       </div>
     </div>
   </footer>
+  <div class="container-edge container-edge--login">
+  <section class="modal modal--login modal--show">
+    <h2 class="visually-hidden">Login window</h2>
+    <p>Log In</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+      <label class="visually-hidden" for="main-nav-search-id">Your E-mail</label>
+      <input class="login-form__email" id="login-for-email-id" type="email" name="login-for-email"
+        placeholder="Your E-mail">
+      <label class="visually-hidden" for="main-nav-search-id">Your password</label>
+      <input class="login-form__password" id="login-for-password-id" type="password" name="login-for-password"
+        placeholder="Password">
+      <a class="login-form__forgot-link" href="#">Forgot your password?</a>
+      <button class="login-form__submit btn btn--agree" type="button">Log In</button>
+      <button class="login-form__close" type="button"><span class="visually-hidden">Close window</span></button>
+      <div class="login-form__new">
+        <p>Don’t have an account?</p>
+        <a class="login-form__new-link" href="#">Sign up</a>
+      </div>
+    </form>
+  </section>
+</div>
   <script src="js/main.js"></script>
 </body>
 

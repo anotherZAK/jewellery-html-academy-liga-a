@@ -1,0 +1,27 @@
+.cart-info {
+  margin: 0 auto;
+  max-width: 430px;
+}
+
+.cart-info h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 139px;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.cart-info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-info p {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 139px;
+}
+
