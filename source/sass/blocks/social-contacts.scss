@@ -9,10 +9,23 @@
 
 .social-contacts__link {
   color: #ffffff;
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &--facebook {
+    margin-left: 5px;
+  }
 }
 
 .social-contacts__icon {
   fill: #ffffff;
+}
+
+.social-contacts__name {
+  text-align: left;
+  padding-left: 5px;
 }
 
 @media (max-width: $mobile-width) {
@@ -31,5 +44,23 @@
   
   .social-contacts__name {
     display: none;
+  }
+
+  .social-contacts__icon {
+    &--facebook {
+      width: 12px;
+      height: 21px;
+    }
+
+    &--instagram,
+    &--pinterest {
+      width: 20px;
+      height: 21px;
+    }
+
+    &--twitter {
+      width: 20px;
+      height: 18px;
+    }
   }
 }

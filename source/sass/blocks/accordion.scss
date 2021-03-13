@@ -1,0 +1,16 @@
+.accordion {
+  &--closed {
+    &::before {
+      transform: rotate(-45deg);
+      right: 43px;
+    }
+  
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &--closed + p {
+    display: none;
+  }
+}

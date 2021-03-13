@@ -2,7 +2,8 @@ const path = require("path");
 
 module.exports = {
   entry: [
-    "./source/js/burger-menu.js"
+    "./source/js/burger-menu.js",
+    "./source/js/accordion.js",
   ],
   output: {
     filename: "main.js",

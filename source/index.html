@@ -37,12 +37,14 @@
             <use xlink:href="img/sprite.svg#icon-search"></use>
           </svg>
         </form>
-        <a class="main-nav__login">Login</a>
-        <a class="main-nav__cart"><span class="main-nav__cart-text">Cart <span>0</span></span>
-          <svg class="main-nav__cart-icon" width="18" height="16">
-            <use xlink:href="img/sprite.svg#icon-cart"></use>
-          </svg>
-        </a>
+        <div>
+          <a class="main-nav__login" href="#">Login</a>
+          <a class="main-nav__cart" href="#"><span class="main-nav__cart-text">Cart <span>0</span></span>
+            <svg class="main-nav__cart-icon" width="18" height="16">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">What’s new</a>
@@ -92,7 +94,7 @@
         <p>New In</p>
         <a class="products__link" href="catalog.html">Shop now</a>
         <ul class="products__list">
-          <li class="products__item">
+          <li class="products__item products__item--group-1">
             <div class="product-card">
               <h3>Necklace with amethyst</h3>
               <p>$ 145</p>
@@ -115,7 +117,7 @@
               </a>
             </div>
           </li>
-          <li class="products__item">
+          <li class="products__item products__item--group-1">
             <div class="product-card">
               <h3>Layered сhoker</h3>
               <p>$ 115</p>
@@ -137,7 +139,7 @@
               </a>
             </div>
           </li>
-          <li class="products__item">
+          <li class="products__item products__item--group-2">
             <div class="product-card">
               <h3>Gold chain</h3>
               <p>$ 215</p>
@@ -159,7 +161,96 @@
               </a>
             </div>
           </li>
-          <li class="products__item">
+          <li class="products__item products__item--group-2">
+            <div class="product-card">
+              <h3>Galaxy earrings</h3>
+              <p>$ 95</p>
+              <a class="product-card__link" href="product-card.html">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/jpg/mobile/index-catalog-necklace-with-amethyst-mobile@1x.webp 1x, img/jpg/mobile/index-catalog-necklace-with-amethyst-mobile@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/jpg/tablet/index-catalog-necklace-with-amethyst-tablet@1x.webp 1x, img/jpg/tablet/index-catalog-necklace-with-amethyst-tablet@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp"
+                    srcset="img/jpg/desktop/index-catalog-galaxy-earrings-desktop@1x.webp 1x, img/jpg/desktop/index-catalog-galaxy-earrings-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img src="img/jpg/desktop/index-catalog-galaxy-earrings-desktop@1x.jpg" width="270" height="284"
+                    srcset="img/jpg/desktop/index-catalog-galaxy-earrings-desktop@2x.jpg" alt="Galaxy earrings">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="products__item products__item--group-3">
+            <div class="product-card">
+              <h3>Necklace with amethyst</h3>
+              <p>$ 145</p>
+              <a class="product-card__link" href="product-card.html">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/jpg/mobile/index-catalog-purple-gemstone-necklace-mobile@1x.webp 1x, img/jpg/mobile/index-catalog-purple-gemstone-necklace-mobile@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/jpg/tablet/index-catalog-purple-gemstone-necklace-tablet@1x.webp 1x, img/jpg/tablet/index-catalog-purple-gemstone-necklace-tablet@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp"
+                    srcset="img/jpg/desktop/index-catalog-purple-gemstone-necklace-desktop@1x.webp 1x, img/jpg/desktop/index-catalog-purple-gemstone-necklace-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img src="img/jpg/desktop/index-catalog-purple-gemstone-necklace-desktop@1x.jpg" width="270"
+                    height="284" srcset="img/jpg/desktop/index-catalog-purple-gemstone-necklace-desktop@2x.jpg"
+                    alt="Necklace with amethyst">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="products__item products__item--group-3">
+            <div class="product-card">
+              <h3>Layered сhoker</h3>
+              <p>$ 115</p>
+              <a class="product-card__link" href="product-card.html">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/jpg/mobile/index-catalog-layered-choker-mobile@1x.webp 1x, img/jpg/mobile/index-catalog-layered-choker-tablet-mobile@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/jpg/tablet/index-catalog-layered-choker-tablet@1x.webp 1x, img/jpg/tablet/index-catalog-layered-choker-tablet@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp"
+                    srcset="img/jpg/desktop/index-catalog-layered-choker-desktop@1x.webp 1x, img/jpg/desktop/index-catalog-layered-choker-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img src="img/jpg/desktop/index-catalog-layered-choker-desktop@1x.jpg" width="270" height="284"
+                    srcset="img/jpg/desktop/index-catalog-layered-choker-desktop@2x.jpg" alt="Layered сhoker">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="products__item products__item--group-4">
+            <div class="product-card">
+              <h3>Gold chain</h3>
+              <p>$ 215</p>
+              <a class="product-card__link" href="product-card.html">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/jpg/mobile/index-catalog-necklace-with-amethyst-mobile@1x.webp 1x, img/jpg/mobile/index-catalog-necklace-with-amethyst-mobile@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/jpg/tablet/index-catalog-necklace-with-amethyst-tablet@1x.webp 1x, img/jpg/tablet/index-catalog-necklace-with-amethyst-tablet@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp"
+                    srcset="img/jpg/desktop/index-catalog-gold-chain-desktop@1x.webp 1x, img/jpg/desktop/index-catalog-gold-chain-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img src="img/jpg/desktop/index-catalog-gold-chain-desktop@1x.jpg" width="270" height="284"
+                    srcset="img/jpg/desktop/index-catalog-gold-chain-desktop@2x.jpg" alt="Gold chain">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="products__item products__item--group-4">
             <div class="product-card">
               <h3>Galaxy earrings</h3>
               <p>$ 95</p>
@@ -198,7 +289,7 @@
       </section>
       <section class="blog">
         <h2>Blog</h2>
-        <a class="blog__link" href="#">New In</a>
+        <a class="blog__link" href="#">Read All</a>
         <ul class="blog__list">
           <li class="blog__item blog__item--regular">
             <div class="blog-card">
@@ -294,21 +385,25 @@
         <ul class="faq__list">
           <li class="faq__item">
             <h3>What materials are the jewellery made of?</h3>
+            <button class="faq__button accordion accordion-00"><span class="visually-hidden">Toggle button</span></button>
             <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.</p>
           </li>
           <li class="faq__item">
             <h3>Which countries do you deliver to?</h3>
+            <button class="faq__button accordion accordion-01"><span class="visually-hidden">Toggle button</span></button>
             <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.</p>
           </li>
           <li class="faq__item">
             <h3>What are the payment methods?</h3>
+            <button class="faq__button accordion accordion-02"><span class="visually-hidden">Toggle button</span></button>
             <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.</p>
           </li>
           <li class="faq__item">
             <h3>Can I return the jewellery if it didn’t fit me?</h3>
+            <button class="faq__button accordion accordion-03"><span class="visually-hidden">Toggle button</span></button>
             <p>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.</p>
           </li>
@@ -316,10 +411,10 @@
       </section>
       <section class="follow-us">
         <h2>@Chjewellery</h2>
-        <a class="follow-us__link" class="#">Follow us</a>
+        <a class="follow-us__link" href="#">Follow us</a>
         <ul class="follow-us__list">
           <li class="follow-us__item follow-us__item--user-1">
-            <a class="follow-us__link follow-us__link--user-1" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-1" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -343,7 +438,7 @@
             </a>
           </li>
           <li class="follow-us__item follow-us__item--user-2">
-            <a class="follow-us__link follow-us__link--user-2" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-2" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -367,7 +462,7 @@
             </a>
           </li>
           <li class="follow-us__item follow-us__item--user-3">
-            <a class="follow-us__link follow-us__link--user-3" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-3" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -391,7 +486,7 @@
             </a>
           </li>
           <li class="follow-us__item follow-us__item--user-4">
-            <a class="follow-us__link follow-us__link--user-4" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-4" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -415,7 +510,7 @@
             </a>
           </li>
           <li class="follow-us__item follow-us__item--user-5">
-            <a class="follow-us__link follow-us__link--user-5" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-5" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -439,7 +534,7 @@
             </a>
           </li>
           <li class="follow-us__item follow-us__item--user-6">
-            <a class="follow-us__link follow-us__link--user-6" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-6" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -463,7 +558,7 @@
             </a>
           </li>
           <li class="follow-us__item follow-us__item--user-7">
-            <a class="follow-us__link follow-us__link--user-7" href="#">
+            <a class="follow-us__userlink follow-us__userlink--user-7" href="#">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -531,7 +626,7 @@
             <h1 class="visually-hidden">Our contacts in social networks</h1>
             <ul class="social-contacts__list">
               <li class="social-contacts__item">
-                <a class="social-contacts__link" href="#">
+                <a class="social-contacts__link social-contacts__link--facebook" href="#">
                   <svg class="social-contacts__icon social-contacts__icon--facebook" width="8" height="15">
                     <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
@@ -569,7 +664,7 @@
     </div>
   </footer>
   <div class="container-edge container-edge--login">
-  <section class="modal modal--login modal--show">
+  <section class="modal modal--login">
     <h2 class="visually-hidden">Login window</h2>
     <p>Log In</p>
     <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -589,7 +684,8 @@
     </form>
   </section>
 </div>
-  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  
 </body>
 
 </html>

@@ -21,8 +21,10 @@
 }
 
 .faq__item {
+  position: relative;
   border: 1px solid #a87b62;
   margin-bottom: -1px;
+  padding-bottom: 33px;
 }
 
 .faq__item h3 {
@@ -33,9 +35,40 @@
   font-size: 18px;
 }
 
+.faq__button {
+  position: absolute;
+  padding-top: 22px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-left: 90%;
+  padding-right: 10%;
+  top: 42px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    right: 50px;
+    background-color: #a87b62;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    right: 43px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .faq__item p {
   margin: 0;
-  margin-bottom: 50px;
   padding-left: 50px;
   max-width: 527px;
 }

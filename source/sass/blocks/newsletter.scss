@@ -36,26 +36,62 @@
   padding-top: 6px;
   padding-bottom: 6px;
   width: 60%;
+  font-family: $main-font;
+  font-weight: 500;
   font-size: 14px;
+  line-height: 21px;
   color: #9b9997;
   background-color: transparent;
   border: none;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 2px 3px #ffffff;
+  }
 }
 
 .newsletter__form button {
+  padding: 6px;
+  padding-right: 30px;
   font-size: 16px;
   color: #ffffff;
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:hover + .newsletter__icon,
+  &:focus + .newsletter__icon {
+    transform: translateX(2px) scale(1.2);
+  }
 }
 
 .newsletter__icon {
+  margin-left: -25px;
   stroke: #ffffff;
 }
 
 @media (max-width: $tablet-width) {
   .newsletter {
     grid-column: 1 / -1;
+    margin-bottom: 30px;
+  }
+
+  .newsletter__form {
+    &::after {
+      top: 45px;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .newsletter__form input {
+    margin-right: 20px;
   }
 }

@@ -9,4 +9,14 @@
 
 .about-purchase__link {
   color: #ffffff;
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-purchase {
+    margin-bottom: 50px;
+  }
 }

@@ -15,11 +15,11 @@
 
 @media (max-width: $tablet-width) {
   .container-grid {
-    &--catalog{
+    &--catalog {
       flex-direction: column;
     }
 
-    &-footer {
+    &--footer {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
@@ -27,7 +27,7 @@
 
 @media (max-width: $mobile-width) {
   .container-grid {
-    &-footer {
+    &--footer {
       display: block;
     }
   }
