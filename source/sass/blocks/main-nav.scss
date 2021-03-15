@@ -1,7 +1,7 @@
 .main-nav {
   display: grid;
-  grid-template-columns: 2fr 5fr 1fr;
-  row-gap: 20px;
+  grid-template-columns: 1fr 2fr 1fr;
+  row-gap: 31px;
 }
 
 .main-nav__logo {
@@ -17,7 +17,7 @@
   position: relative;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .main-nav__form input {
@@ -25,6 +25,7 @@
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 30px;
+  letter-spacing: 1.1px;
   border: none;
   border-radius: 21px;
 
@@ -33,24 +34,30 @@
     box-shadow: 0 0 2px 2px #a87b62;
   }
 
-  &:focus + .main-nav__search-icon{
+  &:focus + .main-nav__search-icon {
     opacity: 0.5;
   }
 }
 
 .main-nav__search-icon {
   position: absolute;
-  top: 7px;
-  left: 4px;
+  top: 9px;
+  left: 0;
+}
+
+.main-nav > div {
+  margin-top: 9px;
+  margin-left: auto;
 }
 
 .main-nav__login,
 .main-nav__cart {
-  margin-right: 30px;
+  margin-right: 20px;
   padding-top: 3px;
   padding-left: 5px;
   padding-bottom: 3px;
   padding-right: 5px;
+  font-size: 14px;
 
   &:hover {
     color: #a87b62;
@@ -73,11 +80,12 @@
   grid-column: 1 / -1;
   margin: 0 auto;
   padding: 0;
+  padding-left: 37px;
   list-style: none;
 }
 
 .main-nav__item {
-  margin-right: 35px;
+  margin-right: 26px;
 
   &:last-child {
     margin-right: 0;

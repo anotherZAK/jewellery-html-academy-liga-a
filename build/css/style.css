@@ -1123,7 +1123,9 @@ img {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1500px; }
 
 .container-grid--footer {
   display: grid;
@@ -1293,7 +1295,8 @@ img {
           order: -1; }
 
 .catalog-form {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-right: 50px; }
 
 .catalog-form__filter-close,
 .catalog-form__filter-button {
@@ -1376,6 +1379,9 @@ img {
 
 .catalog-filter__submit {
   margin-bottom: 25px; }
+
+.catalog-filter__close {
+  display: none; }
 
 @media (max-width: 1023px) {
   .catalog-filter {

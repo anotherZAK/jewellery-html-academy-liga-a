@@ -1,5 +1,5 @@
 .container-grid {
-  &--catalog{
+  &--catalog {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -8,9 +8,9 @@
 
   &--footer {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 3.3fr 1.3fr 1fr 1fr;
     column-gap: 20px;
-    padding-top: 100px;
+    padding-top: 89px;
     padding-bottom: 100px;
   }
 }

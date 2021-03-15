@@ -2,9 +2,9 @@
   &--closed {
     &::before {
       transform: rotate(-45deg);
-      right: 43px;
+      right: 49px;
     }
-  
+
     &::after {
       transform: rotate(45deg);
     }
@@ -15,7 +15,7 @@
       transform: rotate(-45deg);
       right: 63px;
     }
-  
+
     &::after {
       transform: rotate(45deg);
     }

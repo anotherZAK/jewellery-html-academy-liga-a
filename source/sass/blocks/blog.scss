@@ -1,11 +1,11 @@
 .blog {
-  margin-bottom: 70px;
+  margin-bottom: 119px;
   text-align: center;
 }
 
 .blog h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   font-family: $second-font;
   font-weight: 700;
   font-size: 34px;
@@ -15,16 +15,28 @@
 }
 
 .blog__link {
+  position: relative;
   padding-top: 3px;
   padding-left: 5px;
   padding-right: 5px;
   color: #221b17;
-  border-bottom: 1px solid #a87b62;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 28px;
+    left: 4px;
+    width: 64px;
+    height: 1px;
+    background-color: #a87b62;
+  }
 
   &:hover {
-    border-bottom: none;
-    border-top: 1px solid #a87b62;
     opacity: 0.7;
+
+    &::after {
+      top: 0;
+    }
   }
 }
 
@@ -35,7 +47,7 @@
   row-gap: 30px;
   column-gap: 30px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 63px;
   padding: 0;
   max-width: 1400px;
   list-style: none;
