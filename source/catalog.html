@@ -96,6 +96,7 @@
             <ul class="catalog-filter__list">
               <li class="catalog-filter__item">
                 <h3>Product</h3>
+                <button class="catalog-filter__button accordion accordion-00"><span class="visually-hidden">Toggle button</span></button>
                 <div>
                   <input id="product-filter-necklaces" type="checkbox" name="product-filter-necklaces-id">
                   <label for="product-filter-necklaces">Necklaces</label>
@@ -115,6 +116,7 @@
               </li>
               <li class="catalog-filter__item">
                 <h3>Material</h3>
+                <button class="catalog-filter__button accordion accordion-01"><span class="visually-hidden">Toggle button</span></button>
                 <div>
                   <input id="material-filter-gold" type="checkbox" name="material-filter-gold-id">
                   <label for="material-filter-gold">Gold</label>
@@ -126,6 +128,7 @@
               </li>
               <li class="catalog-filter__item">
                 <h3>Collection</h3>
+                <button class="catalog-filter__button accordion accordion-02"><span class="visually-hidden">Toggle button</span></button>
                 <div>
                   <input id="collection-filter-pink-flamingo" type="checkbox" name="collection-filter-pink-flamingo-id">
                   <label for="collection-filter-pink-flamingo">Pink flamingo</label>
@@ -137,6 +140,7 @@
               </li>
               <li class="catalog-filter__item">
                 <h3>Price</h3>
+                <button class="catalog-filter__button accordion accordion-03"><span class="visually-hidden">Toggle button</span></button>
                 <div class="range-filter">
                   <div class="range-filter__controls">
                     <div class="range-filter__scale">
@@ -152,8 +156,9 @@
                 </div>
               </li>
             </ul>
-            <input type="submit" value="Apply">
-            <input type="reset" value="Clear All">
+            <button class="catalog-filter__submit btn btn--agree" type="submit">Apply</button>
+            <button class="catalog-filter__reset btn" type="reset">Clear All</button>
+            <button class="catalog-filter__close" type="button"><span class="visually-hidden">Close</span></button>
           </form>
         </section>
         <section class="catalog-main">

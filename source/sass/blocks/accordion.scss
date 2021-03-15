@@ -10,7 +10,22 @@
     }
   }
 
+  &--filter-closed {
+    &::before {
+      transform: rotate(-45deg);
+      right: 63px;
+    }
+  
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
   &--closed + p {
+    display: none;
+  }
+
+  &--filter-closed ~ div {
     display: none;
   }
 }

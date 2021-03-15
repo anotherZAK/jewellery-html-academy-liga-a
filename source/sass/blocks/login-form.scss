@@ -17,10 +17,22 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #1d1613;
+
+  &:hover,
+  &:focus {
+    margin-bottom: 31px;
+    border-bottom: none;
+    box-shadow: 0 0 2px 3px #a87b62;
+  }
 }
 
 .login-form input[type="password"] {
   margin-bottom: 0;
+
+  &:hover,
+  &:focus {
+    margin-bottom: 1px;
+  }
 }
 
 .login-form__forgot-link {
@@ -29,6 +41,10 @@
   text-align: right;
   font-size: 12px;
   color: #9b9997;
+
+  &:hover {
+    color: #000000;
+  }
 }
 
 .login-form button {
@@ -63,6 +79,15 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .login-form__new {
@@ -83,6 +108,10 @@
 
 .login-form__new-link {
   font-size: 14px;
+
+  &:hover {
+    color: #a87b62;
+  }
 }
 
 @media (max-width: $mobile-width) { 

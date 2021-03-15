@@ -1,7 +1,9 @@
 .catalog-form {
   margin-top: 20px;
+  margin-right: 50px;
 }
 
+.catalog-form__filter-close,
 .catalog-form__filter-button {
   display: none;
 }
@@ -10,3 +12,11 @@
   padding: 0;
   list-style: none;
 }
+
+@media (max-width: $tablet-width) {
+  .catalog-form__filter-button {
+    display: block;
+  }
+}
+
+
