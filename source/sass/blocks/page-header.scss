@@ -2,8 +2,13 @@
   margin-top: 30px;
   margin-bottom: 19px;
 
-  &--catalog {
+  &--catalog,
+  &--card {
     margin-top: 42px;
+  }
+
+  &--card {
+    margin-bottom: 98px;
   }
 }
 

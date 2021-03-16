@@ -24,15 +24,14 @@
         <button class="burger burger--catalog" type="button">
           <span class="visually-hidden">Toggle menu</span>
         </button>
-        <a class="main-nav__logo main-nav__logo--catalog">
+        <a class="main-nav__logo main-nav__logo--catalog" href="index.html">
           <svg class="main-nav__logo-icon" width="66" height="66">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
         <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="main-nav-search-id">Search</label>
-          <input id="main-nav-search-id" type="text" name="main-nav-search"
-            placeholder="Type here to search">
+          <input id="main-nav-search-id" type="text" name="main-nav-search" placeholder="Type here to search">
           <svg class="main-nav__search-icon" width="14" height="14">
             <use xlink:href="img/sprite.svg#icon-search"></use>
           </svg>
@@ -93,72 +92,79 @@
           <h2 class="visually-hidden">Product selection form</h2>
           <button class="catalog-form__filter-button btn btn--agree" type="button">Filter</button>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <ul class="catalog-filter__list">
-              <li class="catalog-filter__item">
-                <h3>Product</h3>
-                <button class="catalog-filter__button accordion accordion-00"><span class="visually-hidden">Toggle button</span></button>
-                <div>
-                  <input id="product-filter-necklaces" type="checkbox" name="product-filter-necklaces-id">
-                  <label for="product-filter-necklaces">Necklaces</label>
-                </div>
-                <div>
-                  <input id="product-filter-chokers" type="checkbox" name="product-filter-chokers-id">
-                  <label for="product-filter-chokers">Chokers</label>
-                </div>
-                <div>
-                  <input id="product-filter-rings" type="checkbox" name="product-filter-rings-id">
-                  <label for="product-filter-rings">Rings</label>
-                </div>
-                <div>
-                  <input id="product-filter-earrings" type="checkbox" name="product-filter-earrings-id">
-                  <label for="product-filter-earrings">Earrings</label>
-                </div>
-              </li>
-              <li class="catalog-filter__item">
-                <h3>Material</h3>
-                <button class="catalog-filter__button accordion accordion-01"><span class="visually-hidden">Toggle button</span></button>
-                <div>
-                  <input id="material-filter-gold" type="checkbox" name="material-filter-gold-id">
-                  <label for="material-filter-gold">Gold</label>
-                </div>
-                <div>
-                  <input id="material-filter-silver" type="checkbox" name="material-filter-silver-id">
-                  <label for="material-filter-silver">Silver</label>
-                </div>
-              </li>
-              <li class="catalog-filter__item">
-                <h3>Collection</h3>
-                <button class="catalog-filter__button accordion accordion-02"><span class="visually-hidden">Toggle button</span></button>
-                <div>
-                  <input id="collection-filter-pink-flamingo" type="checkbox" name="collection-filter-pink-flamingo-id">
-                  <label for="collection-filter-pink-flamingo">Pink flamingo</label>
-                </div>
-                <div>
-                  <input id="collection-filter-dreams" type="checkbox" name="collection-filter-dreams-id">
-                  <label for="collection-filter-dreams">Dreams</label>
-                </div>
-              </li>
-              <li class="catalog-filter__item">
-                <h3>Price</h3>
-                <button class="catalog-filter__button accordion accordion-03"><span class="visually-hidden">Toggle button</span></button>
-                <div class="range-filter">
-                  <div class="range-filter__controls">
-                    <div class="range-filter__scale">
-                      <div class="range-filter__bar"></div>
+            <div>
+              <ul class="catalog-filter__list">
+                <li class="catalog-filter__item">
+                  <h3>Product</h3>
+                  <button class="catalog-filter__button accordion accordion-00"><span class="visually-hidden">Toggle
+                      button</span></button>
+                  <div>
+                    <input id="product-filter-necklaces" type="checkbox" name="product-filter-necklaces-id">
+                    <label for="product-filter-necklaces">Necklaces</label>
+                  </div>
+                  <div>
+                    <input id="product-filter-chokers" type="checkbox" name="product-filter-chokers-id">
+                    <label for="product-filter-chokers">Chokers</label>
+                  </div>
+                  <div>
+                    <input id="product-filter-rings" type="checkbox" name="product-filter-rings-id">
+                    <label for="product-filter-rings">Rings</label>
+                  </div>
+                  <div>
+                    <input id="product-filter-earrings" type="checkbox" name="product-filter-earrings-id">
+                    <label for="product-filter-earrings">Earrings</label>
+                  </div>
+                </li>
+                <li class="catalog-filter__item">
+                  <h3>Material</h3>
+                  <button class="catalog-filter__button accordion accordion-01"><span class="visually-hidden">Toggle
+                      button</span></button>
+                  <div>
+                    <input id="material-filter-gold" type="checkbox" name="material-filter-gold-id">
+                    <label for="material-filter-gold">Gold</label>
+                  </div>
+                  <div>
+                    <input id="material-filter-silver" type="checkbox" name="material-filter-silver-id">
+                    <label for="material-filter-silver">Silver</label>
+                  </div>
+                </li>
+                <li class="catalog-filter__item">
+                  <h3>Collection</h3>
+                  <button class="catalog-filter__button accordion accordion-02"><span class="visually-hidden">Toggle
+                      button</span></button>
+                  <div>
+                    <input id="collection-filter-pink-flamingo" type="checkbox"
+                      name="collection-filter-pink-flamingo-id">
+                    <label for="collection-filter-pink-flamingo">Pink flamingo</label>
+                  </div>
+                  <div>
+                    <input id="collection-filter-dreams" type="checkbox" name="collection-filter-dreams-id">
+                    <label for="collection-filter-dreams">Dreams</label>
+                  </div>
+                </li>
+                <li class="catalog-filter__item">
+                  <h3>Price</h3>
+                  <button class="catalog-filter__button accordion accordion-03"><span class="visually-hidden">Toggle
+                      button</span></button>
+                  <div class="range-filter">
+                    <div class="range-filter__controls">
+                      <div class="range-filter__scale">
+                        <div class="range-filter__bar"></div>
+                      </div>
+                      <div class="range-filter__toggle range-filter__toggle-min" tabindex="0"></div>
+                      <div class="range-filter__toggle range-filter__toggle-max" tabindex="0"></div>
                     </div>
-                    <div class="range-filter__toggle range-filter__toggle-min" tabindex="0"></div>
-                    <div class="range-filter__toggle range-filter__toggle-max" tabindex="0"></div>
+                    <div class="range-filter__price-controls">
+                      <p class="range-filter__price range-filter__price--min">$ 55</p>
+                      <p class="range-filter__price range-filter__price--max">$ 55</p>
+                    </div>
                   </div>
-                  <div class="range-filter__price-controls">
-                    <p class="range-filter__price range-filter__price--min">$ 55</p>
-                    <p class="range-filter__price range-filter__price--max">$ 55</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <button class="catalog-filter__submit btn btn--agree" type="submit">Apply</button>
-            <button class="catalog-filter__reset btn" type="reset">Clear All</button>
-            <button class="catalog-filter__close" type="button"><span class="visually-hidden">Close</span></button>
+                </li>
+              </ul>
+              <button class="catalog-filter__submit btn btn--agree" type="submit">Apply</button>
+              <button class="catalog-filter__reset btn" type="reset">Clear All</button>
+              <button class="catalog-filter__close" type="button"><span class="visually-hidden">Close</span></button>
+            </div>
           </form>
         </section>
         <section class="catalog-main">
@@ -181,8 +187,7 @@
                       srcset="img/jpg/desktop/catalog-double-pearl-earrings-desktop@1x.webp 1x, img/jpg/desktop/catalog-double-pearl-earrings-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
                     <img src="img/jpg/desktop/catalog-double-pearl-earrings-desktop@1x.jpg" width="270" height="272"
-                      srcset="img/jpg/desktop/catalog-double-pearl-earrings-desktop@2x.jpg"
-                      alt="Double pearl earrings">
+                      srcset="img/jpg/desktop/catalog-double-pearl-earrings-desktop@2x.jpg" alt="Double pearl earrings">
                   </picture>
                 </a>
               </div>
@@ -227,8 +232,7 @@
                       srcset="img/jpg/desktop/catalog-gold-layered-necklace-desktop@1x.webp 1x, img/jpg/desktop/catalog-gold-layered-necklace-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
                     <img src="img/jpg/desktop/catalog-gold-layered-necklace-desktop@1x.jpg" width="270" height="272"
-                      srcset="img/jpg/desktop/catalog-gold-layered-necklace-desktop@2x.jpg"
-                      alt="Gold layered necklace">
+                      srcset="img/jpg/desktop/catalog-gold-layered-necklace-desktop@2x.jpg" alt="Gold layered necklace">
                   </picture>
                 </a>
               </div>
@@ -250,8 +254,7 @@
                       srcset="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@1x.webp 1x, img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
                     <img src="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@1x.jpg" width="270" height="272"
-                      srcset="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@2x.jpg"
-                      alt="Blue gemstone pendant">
+                      srcset="img/jpg/desktop/catalog-blue-gemstone-pendant-desktop@2x.jpg" alt="Blue gemstone pendant">
                   </picture>
                 </a>
               </div>
@@ -385,8 +388,7 @@
                       srcset="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@1x.webp 1x, img/jpg/desktop/catalog-threader-necklace-closeup-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
                     <img src="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@1x.jpg" width="270" height="272"
-                      srcset="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@2x.jpg"
-                      alt="Threader necklace">
+                      srcset="img/jpg/desktop/catalog-threader-necklace-closeup-desktop@2x.jpg" alt="Threader necklace">
                   </picture>
                 </a>
               </div>

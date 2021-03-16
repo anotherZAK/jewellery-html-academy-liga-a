@@ -16,7 +16,8 @@
     border: none;
     cursor: pointer;
 
-    &--catalog {
+    &--catalog,
+    &--card {
       top: -5px;
     }
 

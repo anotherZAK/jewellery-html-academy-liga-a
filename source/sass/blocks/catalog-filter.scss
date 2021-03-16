@@ -108,7 +108,7 @@
 @media (max-width: $tablet-width) {
   .catalog-filter {
     display: none;
-    
+
     &--open {
       display: block;
       position: absolute;
@@ -117,7 +117,11 @@
       width: 100%;
       height: 100%;
       background-color: white;
-      box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+
+      div {
+        max-width: min-content;
+        box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+      }
 
       .catalog-filter__submit,
       .catalog-filter__reset {
@@ -135,7 +139,7 @@
         border: none;
         border-radius: 50%;
         cursor: pointer;
-    
+
         &::before,
         &::after {
           position: absolute;
@@ -146,20 +150,20 @@
           height: 2px;
           background-color: #ffffff;
         }
-    
+
         &::before {
           transform: rotate(45deg);
         }
-    
+
         &::after {
           transform: rotate(-45deg);
         }
-    
+
         &:hover,
         &:focus {
           opacity: 0.7;
         }
-    
+
         &:active {
           opacity: 0.4;
         }
