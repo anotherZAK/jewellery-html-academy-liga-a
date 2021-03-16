@@ -32,10 +32,18 @@
   padding-left: 11px;
 }
 
+@media (max-width: $tablet-width) {
+  .social-contacts__list {
+    right: -13px;
+    margin-top: 0;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .social-contacts__list {
     display: flex;
     flex-wrap: wrap;
+    right: 4px;
   }
 
   .social-contacts__item {

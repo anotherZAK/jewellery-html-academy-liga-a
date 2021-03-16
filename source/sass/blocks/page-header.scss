@@ -5,12 +5,13 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    margin-bottom: 55px;
+    margin-bottom: 23px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .page-header {
-    margin-bottom: 36px;
+    margin-top: 20px;
+    margin-bottom: 13px;
   }
 }

@@ -8,8 +8,8 @@
     display: block;
     position: absolute;
     padding: 0;
-    top: 0;
-    left: 0;
+    top: 7px;
+    left: -15px;
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -20,6 +20,7 @@
 
 @media (max-width: $mobile-width) {
   .burger {
+    top: 0;
     right: -16px;
   }
 }

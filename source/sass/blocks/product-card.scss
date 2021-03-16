@@ -28,3 +28,15 @@
 .product-card__link {
   order: -1;
 }
+
+@media (max-width: $tablet-width) {
+  .product-card__link img {
+    width: 324px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .product-card h3 {
+    margin-top: 10px;
+  }
+}

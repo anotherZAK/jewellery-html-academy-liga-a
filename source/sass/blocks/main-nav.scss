@@ -150,7 +150,8 @@
         width: 25px;
         height: 2px;
         background-color: #000000;
-        box-shadow: 0 -7px 0 0 #000000, 0 7px 0 0 #000000;
+        box-shadow: 0 -8px 0 0 #000000,
+                    0 8px 0 0 #000000;
         transform: translateX(-10px);
       }
     }
@@ -254,6 +255,10 @@
     }
   }
 
+  .main-nav > div {
+    margin-top: 0;
+  }
+
   .main-nav__item {
     position: relative;
     margin-right: 0;
@@ -308,5 +313,12 @@
 }
 
 @media (max-width: $mobile-width) {
+  .main-nav > div {
+    margin-top: -7px;
+  }
 
+  .main-nav__logo-icon {
+    width: 52px;
+    height: 52px;
+  }
 }

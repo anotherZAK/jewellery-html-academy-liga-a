@@ -29,3 +29,13 @@
     display: none;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .accordion {
+    &--closed {
+      &::before {
+        right: 45px;
+      }
+    }
+  }
+}

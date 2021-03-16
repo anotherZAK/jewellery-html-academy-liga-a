@@ -66,6 +66,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .blog {
+    margin-bottom: 70px;
+  }
+
   .blog__list {
     display: block;
   }
@@ -76,7 +80,15 @@
 }
 
 @media (max-width: $mobile-width) {
+  .blog {
+    margin-bottom: 59px;
+  }
+
   .blog__item {
     margin-bottom: 40px;
+  }
+
+  .blog__list {
+    margin-top: 54px;
   }
 }

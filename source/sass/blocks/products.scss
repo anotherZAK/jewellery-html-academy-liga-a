@@ -84,7 +84,40 @@
 }
 
 @media (max-width: $tablet-width) {
+  .products {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+
+  .products p {
+    margin-bottom: 18px;
+  }
+
+  .products__link {
+    &::after {
+      top: 28px;
+    }
+  }
+
   .products__list {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 52px;
+  }
+
+  .products__item {
+    &--group-2 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .products {
+    margin-top: 61px;
+    margin-bottom: 59px;
+  }
+
+  .products__list {
+    margin-top: 42px;
   }
 }

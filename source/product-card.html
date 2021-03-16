@@ -19,19 +19,19 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="container-edge">
+    <div class="container-edge container-edge--header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="burger" type="button">
           <span class="visually-hidden">Toggle menu</span>
         </button>
-        <a class="main-nav__logo" href="index.html">
+        <a class="main-nav__logo">
           <svg class="main-nav__logo-icon" width="66" height="66">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
         <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="main-nav-search-id">Search</label>
-          <input class="main-nav__search" id="main-nav-search-id" type="text" name="main-nav-search"
+          <input id="main-nav-search-id" type="text" name="main-nav-search"
             placeholder="Type here to search">
           <svg class="main-nav__search-icon" width="14" height="14">
             <use xlink:href="img/sprite.svg#icon-search"></use>
@@ -278,7 +278,7 @@
       <div class="container-edge container-edge--footer">
         <div class="container-grid container-grid--footer">
           <section class="newsletter">
-            <h1>The good stuff in your inbox</h1>
+            <h2>The good stuff in your inbox</h2>
             <p>News and updates from CH. No spam, we promise.</p>
             <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="get">
               <label>
@@ -287,7 +287,7 @@
               </label>
               <button type="submit">Sign up</button>
               </label>
-              <svg class="newsletter__icon" width="29" height="9">
+              <svg class="newsletter__icon" width="29" height="11">
                 <use xlink:href="img/sprite.svg#icon-arrow"></use>
               </svg>
             </form>

@@ -80,19 +80,38 @@
 @media (max-width: $tablet-width) {
   .newsletter {
     grid-column: 1 / -1;
-    margin-bottom: 30px;
+    margin-bottom: 46px;
   }
 
   .newsletter__form {
     &::after {
-      top: 45px;
-      width: 80%;
+      top: 35px;
+      width: 82.5%;
     }
+  }
+
+  .newsletter__form input {
+    margin-right: 6%;
   }
 }
 
 @media (max-width: $mobile-width) {
+  .newsletter h2,
+  .newsletter p {
+    max-width: 80%;
+  }
+
+  .newsletter h2 {
+    margin-bottom: 12px;
+  }
+
+  .newsletter__form {
+    &::after {
+      width: 100%;
+    }
+  }
+
   .newsletter__form input {
-    margin-right: 20px;
+    margin-right: 1px;
   }
 }

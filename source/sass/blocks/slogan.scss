@@ -27,7 +27,22 @@
   color: #ffffff;
 }
 
+@media (max-width: $tablet-width) {
+  .slogan {
+    margin-left: -18px;
+  }
+}
+
 @media (max-width: $mobile-width) {
+  .slogan {
+    margin-left: 0;
+    padding-top: 197px;
+  }
+  
+  .slogan p {
+    margin-top: -13px;
+  }
+
   .slogan__title {
     font-size: 38px;
   }

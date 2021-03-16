@@ -18,8 +18,23 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .contacts {
     margin-bottom: 50px;
+  }
+
+  .contacts__list {
+    margin-top: 0;
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    margin-bottom: 44px;
+  }
+
+  .contacts__list {
+    margin-left: 0;
   }
 }
