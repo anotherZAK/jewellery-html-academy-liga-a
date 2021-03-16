@@ -2,11 +2,19 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   row-gap: 31px;
+
+  &--catalog {
+    row-gap: 42px;
+  }
 }
 
 .main-nav__logo {
   grid-column: 2 / 3;
   margin: 0 auto;
+
+  &--catalog {
+    margin-top: -12px;
+  }
 }
 
 .main-nav__logo-icon {
@@ -315,6 +323,12 @@
 @media (max-width: $mobile-width) {
   .main-nav > div {
     margin-top: -7px;
+  }
+
+  .main-nav__logo {
+    &--catalog {
+      margin-top: 0;
+    }
   }
 
   .main-nav__logo-icon {

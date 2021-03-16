@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 79px;
     max-width: 1500px;
   }
 
@@ -19,6 +20,7 @@
   .container-grid {
     &--catalog {
       flex-direction: column;
+      margin-top: 50px;
     }
 
     &--footer {
@@ -31,6 +33,11 @@
 
 @media (max-width: $mobile-width) {
   .container-grid {
+    &--catalog {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
     &--footer {
       display: block;
     }

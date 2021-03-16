@@ -1,5 +1,4 @@
 .catalog-form {
-  margin-top: 20px;
   margin-right: 50px;
 }
 
@@ -8,14 +7,22 @@
   display: none;
 }
 
-.catalog-filter__list {
-  padding: 0;
-  list-style: none;
+@media (max-width: $tablet-width) {
+  .catalog-form {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .catalog-form .catalog-form__filter-button {
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 21px;
+  }
 }
 
 @media (max-width: $tablet-width) {
-  .catalog-form__filter-button {
-    display: block;
+  .catalog-form {
+    margin-bottom: 40px;
   }
 }
 

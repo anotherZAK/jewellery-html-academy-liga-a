@@ -1,7 +1,14 @@
+.catalog-main {
+  margin-bottom: 73px;
+}
+
 .catalog-main__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
+  row-gap: 23px;
+  margin: 0;
+  margin-bottom: 56px;
   padding: 0;
   list-style: none;
 }
@@ -12,6 +19,8 @@
 }
 
 .catalog-main__buttons button {
+  padding: 0;
+  padding-right: 9px;
   font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
@@ -20,14 +29,38 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.catalog-main__buttons div {
+  margin-left: -41px;
 }
 
 @media (max-width: $mobile-width) {
+  .catalog-main {
+    margin-bottom: 64px;
+  }
+
   .catalog-main__list {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 13.5px;
+    margin-bottom: 28px;
   }
 
   .catalog-main__button {
     display: none;
+  }
+
+  .catalog-main__buttons div {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .catalog-main__buttons button {
+    padding-right: 20px;
   }
 }

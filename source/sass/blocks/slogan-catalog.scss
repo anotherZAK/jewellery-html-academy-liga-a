@@ -1,15 +1,13 @@
 .slogan-catalog {
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .slogan-catalog h1 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: $second-font;
   font-weight: 700;
   font-size: 34px;
-  line-height: 58px;
-  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -17,22 +15,24 @@
 
 .slogan-catalog p {
   margin: 0;
-  margin-bottom: 20px;
   font-family: $second-font;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
-  line-height: 49px;
   text-align: center;
   color: #ffffff;
 }
 
 @media (max-width: $mobile-width) {
+  .slogan-catalog {
+    padding-top: 89px;
+  }
+
   .slogan-catalog h1 {
-    font-size: 38px;
+    font-size: 34px;
   }
   
   .slogan p {
-    font-size: 34px;
+    font-size: 22px;
   }
 }
