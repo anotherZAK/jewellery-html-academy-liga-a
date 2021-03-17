@@ -1,12 +1,22 @@
 .cart-info {
   margin: 0 auto;
   max-width: 430px;
+
+  background-image: url("../img/jpg/desktop/cart-mini-necklace-detail-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 84px 79px;
+  background-position: 0 6px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/jpg/desktop/cart-mini-necklace-detail-desktop@2x.jpg");
+    background-size: 84px 79px;
+  }
 }
 
 .cart-info h3 {
   margin: 0;
-  margin-bottom: 20px;
-  margin-left: 139px;
+  margin-bottom: 8px;
+  margin-left: 104px;
   font-family: $second-font;
   font-style: normal;
   font-weight: 700;
@@ -14,14 +24,256 @@
   line-height: 23px;
 }
 
-.cart-info div {
+.cart-info__count {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 62px;
 }
 
 .cart-info p {
   margin: 0;
   margin-bottom: 20px;
-  margin-left: 139px;
+  margin-left: 105px;
+  margin-right: 3px;
 }
 
+.cart-info__number {
+  font-size: 18px;
+}
+
+.cart-info__detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.cart-info__detail p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 0;
+}
+
+.cart-info__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-info__link {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+
+  &--continue {
+    margin-right: 30px;
+  }
+}
+
+.cart-info__button {
+  position: absolute;
+  right: 33px;
+  width: 15px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--add {
+    top: 119px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      width: 14px;
+      height: 2px;
+      background-color: #9b9997;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  &--remove {
+    top: 179px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      width: 14px;
+      height: 2px;
+      background-color: #9b9997;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after,
+    &::before {
+      background-color: #444444;
+    }
+  }
+
+  &:active {
+    &::after,
+    &::before {
+      background-color: #000000;
+    }
+  }
+}
+
+.cart-info__close {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 4px;
+    width: 20px;
+    height: 2px;
+    background-color: #1d1613;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .cart-info {
+    max-width: 442px;
+  
+    background-image: url("../img/jpg/tablet/cart-mini-necklace-detail-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 88px 79px;
+    background-position: 0 6px;
+  
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/tablet/cart-mini-necklace-detail-tablet@2x.jpg");
+      background-size: 88px 79px;
+    }
+  }
+
+  .cart-info h3 {
+    margin-left: 109px;
+  }
+  
+  .cart-info p {
+    margin-left: 109px;
+  }
+
+  .cart-info__button {
+    right: 30px;
+  
+    &--add {
+      top: 123px;
+    }
+  
+    &--remove {
+      top: 183px;
+    }
+  }
+
+  .cart-info__detail p {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .cart-info {
+    width: calc(100% - 30px);
+  
+    background-image: url("../img/jpg/mobile/cart-mini-necklace-detail-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 70px 63px;
+    background-position: 0 6px;
+  
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/mobile/cart-mini-necklace-detail-mobile@2x.jpg");
+      background-size: 70px 63px;
+    }
+  }
+
+  .cart-info__count {
+    margin-bottom: 44px;
+  }
+
+  .cart-info__detail,
+  .cart-info__buttons {
+    display: block;
+  }
+
+  .cart-info__close {
+    top: 10px;
+    right: 10px;
+    width: 21px;
+    height: 21px;
+  
+    &::before,
+    &::after {
+      width: 17px;
+    }
+  }
+
+  .cart-info h3 {
+    margin-left: 85px;
+    font-size: 16px;
+  }
+
+  .cart-info p {
+    margin-left: 86px;
+  }
+
+  .cart-info__detail {
+    margin-bottom: 32px;
+  }
+
+  .cart-info__detail p {
+    margin-left: 0;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+
+  .cart-info__button {
+    right: 15px;
+  
+    &--add {
+      top: 125px;
+    }
+  
+    &--remove {
+      top: 180px;
+    }
+  }
+
+  .cart-info__link {
+    &--continue {
+      margin-bottom: 19px;
+    }
+  }
+}

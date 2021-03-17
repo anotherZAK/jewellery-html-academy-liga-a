@@ -3,6 +3,7 @@
 
 var body = document.querySelector('.page-body');
 var modalLogin = document.querySelector('.modal--login');
+var modalCart = document.querySelector('.modal--cart');
 
 if (modalLogin) {
   var loginButton = document.querySelector('.main-nav__login');
@@ -80,6 +81,51 @@ if (modalLogin) {
         modalLogin.classList.remove('modal--error');
         body.classList.remove('page-body--block-modal');
         document.removeEventListener('click', overlayClickHandle);
+      }
+    }
+  });
+}
+
+if (modalCart) {
+  var addButton = document.querySelector('.product-detailed__button');
+  var closeCartButton = document.querySelector('.cart-info__close');
+
+  var overlayClickHandle2 = function (evt) {
+    if (modalCart.classList.contains('modal--show') && !evt.target.classList.contains('product-detailed__button')) {
+      modalCart.classList.remove('modal--show');
+      modalCart.classList.remove('modal--error');
+      body.classList.remove('page-body--block-modal');
+    }
+
+    modalCart.addEventListener('click', function (evtModal) {
+      evtModal.stopPropagation();
+    });
+  };
+
+  addButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalCart.classList.add('modal--show');
+    body.classList.add('page-body--block-modal');
+
+    document.addEventListener('click', overlayClickHandle2);
+  });
+
+  closeCartButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalCart.classList.remove('modal--show');
+    modalCart.classList.remove('modal--error');
+    body.classList.remove('page-body--block-modal');
+    document.removeEventListener('click', overlayClickHandle2);
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+      if (modalCart.classList.contains('modal--show')) {
+        evt.preventDefault();
+        modalCart.classList.remove('modal--show');
+        modalCart.classList.remove('modal--error');
+        body.classList.remove('page-body--block-modal');
+        document.removeEventListener('click', overlayClickHandle2);
       }
     }
   });

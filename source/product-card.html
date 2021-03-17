@@ -17,7 +17,7 @@
   <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" crossorigin>
 </head>
 
-<body class="page-body">
+<body class="page-body page-body">
   <header class="page-header page-header--card">
     <div class="container-edge container-edge--header">
       <nav class="main-nav main-nav--closed main-nav--nojs main-nav--card">
@@ -31,8 +31,7 @@
         </a>
         <form class="main-nav__form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="main-nav-search-id">Search</label>
-          <input id="main-nav-search-id" type="text" name="main-nav-search"
-            placeholder="Type here to search">
+          <input id="main-nav-search-id" type="text" name="main-nav-search" placeholder="Type here to search">
           <svg class="main-nav__search-icon" width="14" height="14">
             <use xlink:href="img/sprite.svg#icon-search"></use>
           </svg>
@@ -312,17 +311,23 @@
     <p>The item was added to your cart</p>
     <div class="cart-info">
       <h3>Gold Necklace</h3>
-      <div>
+      <div class="cart-info__count">
         <p>$ 115</p>
         <p><span class="cart-info__number">1</span></p>
       </div>
-      <button class="cart-info__button cart-info__button-add" type="button"><span class="visually-hidden">Increase by 1</span></button>
-      <button class="cart-info__button cart-info__button-remove" type="button"><span class="visually-hidden">Reduce by 1</span></button>
-      <button class="cart-info__close" type="button"><span class="visually-hidden">Close window</span></button>
-      <p>You have 1 item in the cart</p>
-      <p>Cart subtotal: <span class="cart-info__price">$ 115</span></p>
-      <a class="cart-info__link cart-info__link--continue btn" href="catalog.html">Continue shopping</a>
-      <a class="cart-info__link cart-info__link--checkout btn btn--agree" href="catalog.html">Checkout</a>
+      <button class="cart-info__button cart-info__button--add" type="button"><span class="visually-hidden">Increase by
+          1</span></button>
+      <button class="cart-info__button cart-info__button--remove" type="button"><span class="visually-hidden">Reduce by
+          1</span></button>
+      <div class="cart-info__detail">
+        <p>You have 1 item in the cart</p>
+        <p>Cart subtotal: <span class="cart-info__price">$ 115</span></p>
+      </div>
+      <div class="cart-info__buttons">
+      <a class="cart-info__link cart-info__link--continue btn" href="#">Continue shopping</a>
+      <a class="cart-info__link cart-info__link--checkout btn btn--agree" href="#">Checkout</a>
+    </div>
+    <button class="cart-info__close" type="button"><span class="visually-hidden">Close window</span></button>
     </div>
   </section>
   <section class="modal modal--login">

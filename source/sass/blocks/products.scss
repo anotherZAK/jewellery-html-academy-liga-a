@@ -1,4 +1,5 @@
 .products {
+  position: relative;
   margin-top: 119px;
   margin-bottom: 140px;
   text-align: center;
@@ -97,6 +98,23 @@
 
 .products__buttons {
   text-align: center;
+}
+
+.products__button-left,
+.products__button-right {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  stroke: #a87b62;
+}
+
+.products__button-left {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.products__button-right {
+  right: 0;
 }
 
 @media (max-width: $tablet-width) {
