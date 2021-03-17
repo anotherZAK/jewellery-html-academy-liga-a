@@ -1,11 +1,11 @@
 .product-detailed {
   display: flex;
-  align-items: flex-end;
   margin-bottom: 100px;
 }
 
 .product-detailed__gallery {
-  margin-right: 100px;
+  margin-top: 10px;
+  margin-right: 8.5%;
 }
 
 .product-detailed__gallery-list {
@@ -50,6 +50,8 @@
 }
 
 .product-detailed__info p {
+  margin: 0;
+  margin-bottom: 37px;
   font-family: $main-font;
   font-weight: 400;
   font-size: 26px;
@@ -59,8 +61,8 @@
 
 .product-detailed__info-link {
   display: inline-block;
-  margin-right: 35px;
-  vertical-align: center;
+  margin-right: 31px;
+  vertical-align: middle;
 
   &--description {
     color: #9b9997;
@@ -68,10 +70,12 @@
 }
 
 .product-detailed__description {
+  margin: 0;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px;
-  margin-bottom: 40px;
+  row-gap: 16px;
+  margin-bottom: 58px;
 }
 
 .product-detailed__description dt {
@@ -84,6 +88,12 @@
   margin-left: auto;
   font-size: 14px;
   font-weight: 400;
+}
+
+.product-detailed__info .product-detailed__button {
+  margin-bottom: 13px;
+  padding-top: 22px;
+  padding-bottom: 21px;
 }
 
 .product-detailed__conditions-list {
@@ -106,8 +116,13 @@
 }
 
 @media (max-width: $tablet-width) {
+  .product-detailed {
+    margin-bottom: 66px;
+  }
+
   .product-detailed__gallery {
     margin-right: 40px;
+    flex-basis: 370px;
   }
 
   .product-detailed__gallery-list {
@@ -131,18 +146,19 @@
 
   .product-detailed__conditions-list li {
     font-size: 12px;
+    line-height: 19px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .product-detailed {
     display: block;
-    align-items: flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 54px;
   }
 
   .product-detailed__gallery {
     margin-right: 0;
+    margin-bottom: 40px;
   }
 
   .product-detailed__gallery-item {
@@ -151,6 +167,22 @@
     &--big {
       display: block;
     }
+  }
+
+  .product-detailed__info {
+    margin: 0 auto;
+  }
+
+  .product-detailed__info p {
+    margin-bottom: 28px;
+  }
+
+  .product-detailed__description {
+    margin-bottom: 48px;
+  }
+
+  .product-detailed__info .product-detailed__button {
+    margin-bottom: 8px;
   }
 
   .product-detailed__conditions-list li {

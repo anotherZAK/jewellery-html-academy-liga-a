@@ -36,8 +36,8 @@
 
   &--login > p {
     margin: 0;
-    margin-bottom: 45px;
-    padding-top: 198px;
+    margin-bottom: 26px;
+    padding-top: 187px;
     text-align: center;
     font-family: $second-font;
     font-weight: 700;
@@ -81,15 +81,24 @@
 @media (max-width: $mobile-width) { 
   .modal {
     &--login {
-      width: auto;
-      max-width: 442px;
+      top: 40%;
+      width: calc(100% - 50px);
+      max-width: 380px;
+      height: 470px;
       background-image: url("../img/jpg/mobile/login-modal-bg-mobile@1x.jpg");
       background-size: contain;
   
       @media (min-resolution: 2dppx) {
         background-image: url("../img/jpg/mobile/login-modal-bg-mobile@2x.jpg");
-        background-size: cover;
+        background-size: contain;
       }
+    }
+
+    &--login > p {
+      margin-bottom: 19px;
+      padding-top: 121px;
+      font-size: 24px;
+      line-height: 31px;
     }
   }
 }

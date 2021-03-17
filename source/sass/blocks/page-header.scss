@@ -8,13 +8,17 @@
   }
 
   &--card {
-    margin-bottom: 98px;
+    margin-bottom: 89px;
   }
 }
 
 @media (max-width: $tablet-width) {
   .page-header {
     margin-bottom: 23px;
+
+    &--card {
+      margin-bottom: 44px;
+    }
   }
 }
 

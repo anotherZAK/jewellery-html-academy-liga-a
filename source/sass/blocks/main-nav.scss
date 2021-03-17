@@ -206,6 +206,7 @@
 
       .main-nav__form input {
         padding-top: 12px;
+        padding-left: 35px;
         padding-bottom: 12px;
         color: #ffffff;
         background-color: #b58f7a;
@@ -327,6 +328,7 @@
 
       .main-nav__form input {
         padding-top: 12px;
+        padding-left: 35px;
         padding-bottom: 12px;
         color: #ffffff;
         background-color: #b58f7a;
@@ -490,7 +492,8 @@
   }
 
   .main-nav__logo {
-    &--catalog {
+    &--catalog,
+    &--card {
       margin-top: 0;
     }
   }
