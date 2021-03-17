@@ -159,22 +159,13 @@
         }
       }
 
-      .main-nav__logo-icon {
-        fill: #ffffff;
-      }
-
       .main-nav__list {
-        grid-row: 3 / 4;
+        position: static;
         display: block;
+        grid-row: 3 / 4;
         margin: 0;
         padding-left: 0;
         width: 100%;
-      }
-
-      .main-nav__sublist {
-        display: block;
-        padding: 0;
-        list-style: none;
       }
 
       .main-nav__subitem {
@@ -244,16 +235,10 @@
         left: 13px;
         fill: #ffffff;
       }
-
     }
 
     &--nojs .burger {
       display: none;
-    }
-
-    &--nojs .main-nav__list {
-      position: static;
-      display: block;
     }
 
     &--closed .burger {
@@ -263,8 +248,7 @@
         width: 25px;
         height: 2px;
         background-color: #000000;
-        box-shadow: 0 -8px 0 0 #000000,
-                    0 8px 0 0 #000000;
+        box-shadow: 0 -8px 0 0 #000000, 0 8px 0 0 #000000;
         transform: translateX(-10px);
       }
     }

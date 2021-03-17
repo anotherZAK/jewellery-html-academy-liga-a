@@ -1,14 +1,3 @@
-.products {
-  position: relative;
-  margin-top: 119px;
-  margin-bottom: 140px;
-  text-align: center;
-
-  &--card {
-    margin-bottom: 150px;
-  }
-}
-
 .products p {
   margin: 0;
   margin-bottom: 23px;
@@ -21,7 +10,14 @@
 }
 
 .products {
+  position: relative;
+  margin-top: 119px;
+  margin-bottom: 140px;
+  text-align: center;
+
   &--card {
+    margin-bottom: 150px;
+
     p {
       margin-bottom: 18px;
     }

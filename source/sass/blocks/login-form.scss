@@ -114,7 +114,7 @@
   }
 }
 
-@media (max-width: $tablet-width) { 
+@media (max-width: $tablet-width) {
   .login-form__close {
     top: 12px;
     right: 14px;
@@ -157,7 +157,7 @@
 
   .login-form input {
     margin-bottom: 22px;
-  
+
     &:hover,
     &:focus {
       margin-bottom: 23px;

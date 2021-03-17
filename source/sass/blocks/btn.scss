@@ -21,7 +21,7 @@
     border: none;
 
     &:hover {
-      background-color: saturate($color: #a87b62, $amount: 20)
+      background-color: saturate($color: #a87b62, $amount: 20);
     }
   }
 }

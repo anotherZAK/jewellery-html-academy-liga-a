@@ -202,13 +202,6 @@ img {
   .slogan p {
     font-size: 22px; } }
 
-.products {
-  margin-top: 119px;
-  margin-bottom: 140px;
-  text-align: center; }
-  .products--card {
-    margin-bottom: 150px; }
-
 .products p {
   margin: 0;
   margin-bottom: 23px;
@@ -219,8 +212,15 @@ img {
   text-align: center;
   color: #1d1613; }
 
-.products--card p {
-  margin-bottom: 18px; }
+.products {
+  position: relative;
+  margin-top: 119px;
+  margin-bottom: 140px;
+  text-align: center; }
+  .products--card {
+    margin-bottom: 150px; }
+    .products--card p {
+      margin-bottom: 18px; }
 
 .products__link {
   position: relative;
@@ -277,6 +277,21 @@ img {
 
 .products__buttons {
   text-align: center; }
+
+.products__button-left,
+.products__button-right {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  stroke: #a87b62; }
+
+.products__button-left {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.products__button-right {
+  right: 0; }
 
 @media (max-width: 1023px) {
   .products {
@@ -350,7 +365,7 @@ img {
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
-  color: #1D1613; }
+  color: #1d1613; }
 
 .product-detailed__info p {
   margin: 0;
@@ -359,7 +374,7 @@ img {
   font-weight: 400;
   font-size: 26px;
   line-height: 34px;
-  color: #1D1613; }
+  color: #1d1613; }
 
 .product-detailed__info-link {
   display: inline-block;
@@ -511,6 +526,13 @@ img {
   color: #1d1613;
   overflow-x: hidden; }
 
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); }
+
+.swiper-slide {
+  background-color: red; }
+
 .page-header {
   margin-top: 30px;
   margin-bottom: 19px; }
@@ -548,7 +570,7 @@ img {
       height: 100%;
       background-color: #c6c5c4;
       opacity: 0.4;
-      z-index: 99; }
+      z-index: 100; }
 
 .newsletter h2 {
   margin: 0;
@@ -654,11 +676,11 @@ img {
     left: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 100;
+    z-index: 101;
     width: 430px;
     height: 586px;
-    -webkit-box-shadow: 0px 5px 32px rgba(226, 221, 215, 0.24);
-            box-shadow: 0px 5px 32px rgba(226, 221, 215, 0.24);
+    -webkit-box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
+            box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
     background-color: #f0eae4;
     background-image: url("../img/jpg/desktop/login-modal-bg-desktop@1x.jpg");
     background-position: center 0;
@@ -685,12 +707,12 @@ img {
     left: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 100;
+    z-index: 101;
     width: 500px;
     height: 439px;
     background-color: #ffffff;
-    -webkit-box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24);
-            box-shadow: 0px 4px 32px rgba(121, 121, 121, 0.24); }
+    -webkit-box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
+            box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24); }
   .modal--cart > p {
     margin: 0;
     margin-bottom: 41px;
@@ -904,18 +926,13 @@ img {
         padding-right: 78%; }
         .main-nav--nojs .main-nav__link::before, .main-nav--nojs .main-nav__link::after {
           right: 9px; }
-      .main-nav--nojs .main-nav__logo-icon {
-        fill: #ffffff; }
       .main-nav--nojs .main-nav__list {
-        grid-row: 3 / 4;
+        position: static;
         display: block;
+        grid-row: 3 / 4;
         margin: 0;
         padding-left: 0;
         width: 100%; }
-      .main-nav--nojs .main-nav__sublist {
-        display: block;
-        padding: 0;
-        list-style: none; }
       .main-nav--nojs .main-nav__subitem {
         margin-bottom: 18px; }
       .main-nav--nojs .main-nav__sublink {
@@ -972,9 +989,6 @@ img {
         fill: #ffffff; }
     .main-nav--nojs .burger {
       display: none; }
-    .main-nav--nojs .main-nav__list {
-      position: static;
-      display: block; }
     .main-nav--closed .burger::before {
       content: "";
       position: absolute;
@@ -1857,8 +1871,8 @@ img {
         max-width: -webkit-min-content;
         max-width: -moz-min-content;
         max-width: min-content;
-        -webkit-box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
-                box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24); }
+        -webkit-box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+                box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24); }
       .catalog-filter--open .catalog-filter__submit,
       .catalog-filter--open .catalog-filter__reset {
         width: 420px; }
