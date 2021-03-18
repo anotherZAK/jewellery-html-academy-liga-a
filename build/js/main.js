@@ -11741,14 +11741,97 @@ var components = [_esm_components_virtual_virtual__WEBPACK_IMPORTED_MODULE_1__.d
 _esm_components_core_core_class__WEBPACK_IMPORTED_MODULE_0__.default.use(components);
 
 
-/***/ }),
+/***/ })
 
-/***/ "./source/js/accordion.js":
+/******/ });
+/************************************************************************/
+/******/ // The module cache
+/******/ var __webpack_module_cache__ = {};
+/******/ 
+/******/ // The require function
+/******/ function __webpack_require__(moduleId) {
+/******/ 	// Check if module is in cache
+/******/ 	if(__webpack_module_cache__[moduleId]) {
+/******/ 		return __webpack_module_cache__[moduleId].exports;
+/******/ 	}
+/******/ 	// Create a new module (and put it into the cache)
+/******/ 	var module = __webpack_module_cache__[moduleId] = {
+/******/ 		// no module.id needed
+/******/ 		// no module.loaded needed
+/******/ 		exports: {}
+/******/ 	};
+/******/ 
+/******/ 	// Execute the module function
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 
+/******/ 	// Return the exports of the module
+/******/ 	return module.exports;
+/******/ }
+/******/ 
+/************************************************************************/
+/******/ /* webpack/runtime/define property getters */
+/******/ !function() {
+/******/ 	// define getter functions for harmony exports
+/******/ 	__webpack_require__.d = function(exports, definition) {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 			}
+/******/ 		}
+/******/ 	};
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/hasOwnProperty shorthand */
+/******/ !function() {
+/******/ 	__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ }();
+/******/ 
+/******/ /* webpack/runtime/make namespace object */
+/******/ !function() {
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/ }();
+/******/ 
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+/*!**********************************!*\
+  !*** ./source/js/burger-menu.js ***!
+  \**********************************/
+
+
+var body = document.querySelector('.page-body');
+var burgerToggle = document.querySelector('.burger');
+var mainNav = document.querySelector('.main-nav');
+var mainNavList = mainNav.querySelector('.main-nav__list');
+var pageHeader = document.querySelector('.page-header');
+var offsetTop = 100;
+
+mainNav.classList.remove('main-nav--nojs');
+pageHeader.classList.add('page-header--js');
+
+
+burgerToggle.addEventListener('click', function () {
+  body.classList.toggle('page-body--fixed');
+  mainNav.classList.toggle('main-nav--opened');
+  mainNav.classList.toggle('main-nav--closed');
+
+  var bodyHeight = mainNavList.offsetHeight;
+  body.style.setProperty('--element-height', bodyHeight + offsetTop + 'px');
+});
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
 /*!********************************!*\
   !*** ./source/js/accordion.js ***!
   \********************************/
-/***/ (function() {
-
 
 
 var faqList = document.querySelector('.faq__list');
@@ -11792,88 +11875,12 @@ if (catalogFilterList) {
   });
 }
 
-
-/***/ }),
-
-/***/ "./source/js/burger-menu.js":
-/*!**********************************!*\
-  !*** ./source/js/burger-menu.js ***!
-  \**********************************/
-/***/ (function() {
-
-
-
-var body = document.querySelector('.page-body');
-var burgerToggle = document.querySelector('.burger');
-var mainNav = document.querySelector('.main-nav');
-var mainNavList = mainNav.querySelector('.main-nav__list');
-var pageHeader = document.querySelector('.page-header');
-var offsetTop = 100;
-
-mainNav.classList.remove('main-nav--nojs');
-pageHeader.classList.add('page-header--js');
-
-
-burgerToggle.addEventListener('click', function () {
-  body.classList.toggle('page-body--fixed');
-  mainNav.classList.toggle('main-nav--opened');
-  mainNav.classList.toggle('main-nav--closed');
-
-  var bodyHeight = mainNavList.offsetHeight;
-  body.style.setProperty('--element-height', bodyHeight + offsetTop + 'px');
-});
-
-
-/***/ }),
-
-/***/ "./source/js/filter-menu.js":
-/*!**********************************!*\
-  !*** ./source/js/filter-menu.js ***!
-  \**********************************/
-/***/ (function() {
-
-
-
-var filterButton = document.querySelector('.catalog-form__filter-button');
-
-if (filterButton) {
-  var body = document.querySelector('.page-body');
-  var filterMenu = document.querySelector('.catalog-filter');
-  var filterMenuClose = document.querySelector('.catalog-filter__close');
-
-  filterMenu.classList.remove('catalog-filter--nojs');
-
-
-  filterButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    body.classList.add('page-body--fixed');
-    filterMenu.classList.add('catalog-filter--open');
-  });
-
-  filterMenuClose.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    body.classList.remove('page-body--fixed');
-    filterMenu.classList.remove('catalog-filter--open');
-  });
-
-  window.addEventListener('keydown', function (evt) {
-    if (evt.key === 'Escape') {
-      evt.preventDefault();
-      body.classList.remove('page-body--fixed');
-      filterMenu.classList.remove('catalog-filter--open');
-    }
-  });
-}
-
-
-/***/ }),
-
-/***/ "./source/js/modal.js":
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
 /*!****************************!*\
   !*** ./source/js/modal.js ***!
   \****************************/
-/***/ (function() {
-
 
 
 
@@ -12007,98 +12014,151 @@ if (modalCart) {
   });
 }
 
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+/*!**********************************!*\
+  !*** ./source/js/filter-menu.js ***!
+  \**********************************/
 
-/***/ }),
 
-/***/ "./source/js/swiper.js":
+var filterButton = document.querySelector('.catalog-form__filter-button');
+
+if (filterButton) {
+  var body = document.querySelector('.page-body');
+  var filterMenu = document.querySelector('.catalog-filter');
+  var filterMenuClose = document.querySelector('.catalog-filter__close');
+
+  filterMenu.classList.remove('catalog-filter--nojs');
+
+
+  filterButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    body.classList.add('page-body--fixed');
+    filterMenu.classList.add('catalog-filter--open');
+  });
+
+  filterMenuClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    body.classList.remove('page-body--fixed');
+    filterMenu.classList.remove('catalog-filter--open');
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+      evt.preventDefault();
+      body.classList.remove('page-body--fixed');
+      filterMenu.classList.remove('catalog-filter--open');
+    }
+  });
+}
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
 /*!*****************************!*\
   !*** ./source/js/swiper.js ***!
   \*****************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 
 
 
 
-var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-container', {
+var cartSwiper = undefined;
+var cartSwiperSelector = document.querySelector('.swiper--product-detailed');
+var productsSwiperDesktop = undefined;
+var productsSwiperTablet = undefined;
+var productsSwiperSelector = document.querySelector('.swiper--products');
+var swiperPagination = undefined;
+var breakpointMobile = 767;
+var breakpointTablet = 1023;
 
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+function initCartSwiper() {
+  var screenWidth = document.documentElement.clientWidth;
+
+  if (screenWidth < breakpointMobile && cartSwiper === undefined && cartSwiperSelector) {
+    swiperPagination = document.querySelector('.swiper__pagination');
+    swiperPagination.classList.add('swiper__pagination--show');
+
+    cartSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper--product-detailed', {
+      slideClass: 'swiper__slide',
+      pagination: {
+        el: '.swiper__pagination--product-detailed',
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+          return current + ' of ' + total;
+        }
+      },
+    });
+  } else if (screenWidth > breakpointMobile && cartSwiper !== undefined && cartSwiperSelector) {
+    cartSwiper.destroy();
+    cartSwiper = undefined;
+    swiperPagination.classList.remove('swiper__pagination--show');
+  }
+}
+
+function initProductsSwiper() {
+  var screenWidth = document.documentElement.clientWidth;
+
+  if (screenWidth < breakpointTablet && productsSwiperSelector) {
+    productsSwiperSelector.classList.remove('products__gallery--nojs');
+    if (productsSwiperDesktop) {
+      productsSwiperDesktop.destroy();
+      productsSwiperDesktop = undefined;
+    }
+
+    productsSwiperTablet = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper--products', {
+      slideClass: 'swiper__slide',
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        el: '.swiper__pagination--products',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+      },
+      navigation: {
+        nextEl: '.swiper__button-next',
+        prevEl: '.swiper__button-prev',
+      },
+    });
+  } else if (screenWidth > breakpointTablet && productsSwiperSelector) {
+    productsSwiperSelector.classList.remove('products__gallery--nojs');
+    if (productsSwiperTablet) {
+      productsSwiperTablet.destroy();
+      productsSwiperTablet = undefined;
+    }
+
+    productsSwiperDesktop = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper--products', {
+      slideClass: 'swiper__slide',
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      pagination: {
+        el: '.swiper__pagination--products',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+      },
+      navigation: {
+        nextEl: '.swiper__button-next',
+        prevEl: '.swiper__button-prev',
+      },
+    });
+  }
+}
+
+initCartSwiper();
+initProductsSwiper();
+
+window.addEventListener('resize', function () {
+  initCartSwiper();
+  initProductsSwiper();
 });
 
 
-/***/ })
 
-/******/ });
-/************************************************************************/
-/******/ // The module cache
-/******/ var __webpack_module_cache__ = {};
-/******/ 
-/******/ // The require function
-/******/ function __webpack_require__(moduleId) {
-/******/ 	// Check if module is in cache
-/******/ 	if(__webpack_module_cache__[moduleId]) {
-/******/ 		return __webpack_module_cache__[moduleId].exports;
-/******/ 	}
-/******/ 	// Create a new module (and put it into the cache)
-/******/ 	var module = __webpack_module_cache__[moduleId] = {
-/******/ 		// no module.id needed
-/******/ 		// no module.loaded needed
-/******/ 		exports: {}
-/******/ 	};
-/******/ 
-/******/ 	// Execute the module function
-/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 
-/******/ 	// Return the exports of the module
-/******/ 	return module.exports;
-/******/ }
-/******/ 
-/************************************************************************/
-/******/ /* webpack/runtime/define property getters */
-/******/ !function() {
-/******/ 	// define getter functions for harmony exports
-/******/ 	__webpack_require__.d = function(exports, definition) {
-/******/ 		for(var key in definition) {
-/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 			}
-/******/ 		}
-/******/ 	};
-/******/ }();
-/******/ 
-/******/ /* webpack/runtime/hasOwnProperty shorthand */
-/******/ !function() {
-/******/ 	__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ }();
-/******/ 
-/******/ /* webpack/runtime/make namespace object */
-/******/ !function() {
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/ }();
-/******/ 
-/************************************************************************/
-/******/ // startup
-/******/ // Load entry module
-/******/ __webpack_require__("./source/js/burger-menu.js");
-/******/ __webpack_require__("./source/js/accordion.js");
-/******/ __webpack_require__("./source/js/modal.js");
-/******/ __webpack_require__("./source/js/filter-menu.js");
-/******/ __webpack_require__("./source/js/swiper.js");
-/******/ // This entry module used 'exports' so it can't be inlined
+
+}();

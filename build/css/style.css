@@ -78,6 +78,52 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.swiper {
+  position: relative; }
+
+.swiper__pagination {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 45%; }
+  .swiper__pagination--show {
+    display: block; }
+  .swiper__pagination--products {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .swiper__pagination--products span {
+    padding: 3px;
+    cursor: pointer; }
+
+.swiper__button-prev,
+.swiper__button-next {
+  position: absolute;
+  min-width: 40px;
+  top: 0;
+  cursor: pointer; }
+  .swiper__button-prev:hover svg,
+  .swiper__button-next:hover svg {
+    stroke: #000000;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
+
+.swiper__button-prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 0; }
+
+.swiper__button-next {
+  right: 0; }
+
+.swiper__button-prev svg,
+.swiper__button-next svg {
+  stroke: #a87b62; }
+
 .social-contacts__list {
   position: relative;
   right: -54px;
@@ -241,12 +287,16 @@ img {
     .products__link:hover::after {
       top: 3px; }
 
+.products__gallery {
+  overflow-x: hidden; }
+  .products__gallery--nojs .products__item {
+    grid-row: auto; }
+  .products__gallery--nojs .products__gallery-buttons {
+    display: none; }
+
 .products__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
   margin: 0;
   margin-top: 58px;
   padding: 0;
@@ -254,26 +304,8 @@ img {
   .products__list--card {
     margin-top: 63px; }
 
-.products__item--group-3, .products__item--group-4 {
-  display: none; }
-
-.products__item--slide-hide {
-  margin-left: -300px;
-  margin-right: 300px;
-  opacity: 0;
-  -webkit-transition: 1s;
-  transition: 1s; }
-
-.products__item--slide-show {
-  display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s; }
-
-.products__item--hide {
-  display: none; }
-
-.products__item--show {
-  display: block; }
+.products__item {
+  grid-row: 1 / 2; }
 
 .products__buttons {
   text-align: center; }
@@ -328,7 +360,8 @@ img {
 
 .product-detailed__gallery {
   margin-top: 10px;
-  margin-right: 8.5%; }
+  margin-right: 8.5%;
+  overflow-x: hidden; }
 
 .product-detailed__gallery-list {
   display: grid;
@@ -342,6 +375,15 @@ img {
   list-style: none; }
 
 .product-detailed__gallery-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-column: 1 / 2; }
   .product-detailed__gallery-item--big {
     grid-row: 1 / 4;
@@ -455,13 +497,21 @@ img {
   .product-detailed {
     display: block;
     margin-bottom: 54px; }
+  .product-detailed__gallery-list {
+    grid-template-columns: repeat(4, 0.5fr);
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .product-detailed__gallery-item {
+    grid-row: 1 / 2; }
+    .product-detailed__gallery-item--big {
+      grid-column: 1 / 2; }
   .product-detailed__gallery {
     margin-right: 0;
     margin-bottom: 40px; }
-  .product-detailed__gallery-item {
-    display: none; }
-    .product-detailed__gallery-item--big {
-      display: block; }
   .product-detailed__info {
     margin: 0 auto; }
   .product-detailed__info p {
@@ -483,7 +533,8 @@ img {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-right: 30px; }
 
 .product-card h3 {
   margin: 0;
@@ -525,13 +576,6 @@ img {
   line-height: 24px;
   color: #1d1613;
   overflow-x: hidden; }
-
-.swiper-wrapper {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr); }
-
-.swiper-slide {
-  background-color: red; }
 
 .page-header {
   margin-top: 30px;

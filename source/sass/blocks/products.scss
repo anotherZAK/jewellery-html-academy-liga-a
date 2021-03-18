@@ -50,10 +50,21 @@
   }
 }
 
+.products__gallery {
+  overflow-x: hidden;
+
+  &--nojs .products__item {
+    grid-row: auto;
+  }
+
+  &--nojs .products__gallery-buttons {
+    display: none;
+  }
+}
+
 .products__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 30px;
   margin: 0;
   margin-top: 58px;
   padding: 0;
@@ -65,31 +76,7 @@
 }
 
 .products__item {
-  &--group-3,
-  &--group-4 {
-    display: none;
-  }
-
-  &--slide-hide {
-    margin-left: -300px;
-    margin-right: 300px;
-    opacity: 0;
-    transition: 1s;
-  }
-
-  &--slide-show {
-    display: block;
-
-    transition: 0.5s;
-  }
-
-  &--hide {
-    display: none;
-  }
-
-  &--show {
-    display: block;
-  }
+  grid-row: 1 / 2;
 }
 
 .products__buttons {

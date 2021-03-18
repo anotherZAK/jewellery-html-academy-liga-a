@@ -6,6 +6,7 @@
 .product-detailed__gallery {
   margin-top: 10px;
   margin-right: 8.5%;
+  overflow-x: hidden;
 }
 
 .product-detailed__gallery-list {
@@ -19,6 +20,9 @@
 }
 
 .product-detailed__gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1 / 2;
 
   &--big {
@@ -159,13 +163,40 @@
   .product-detailed__gallery {
     margin-right: 0;
     margin-bottom: 40px;
+
+    &--nojs .product-detailed__gallery-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 auto;
+      max-width: 470px;
+    }
+
+    &--nojs .product-detailed__gallery-list .product-detailed__gallery-item {
+      margin: 0;
+      margin-right: 10px;
+
+      &--big {
+        order: -1;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .product-detailed__gallery-list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    align-items: center;
   }
 
   .product-detailed__gallery-item {
-    display: none;
+    grid-row: 1 / 2;
 
     &--big {
-      display: block;
+      grid-column: 1 / 2;
     }
   }
 

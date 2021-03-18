@@ -81,9 +81,9 @@
     <div class="container-edge">
       <section class="product-detailed">
         <h1 class="visually-hidden">Product information</h1>
-        <div class="product-detailed__gallery">
-          <ul class="product-detailed__gallery-list">
-            <li class="product-detailed__gallery-item">
+        <div class="product-detailed__gallery product-detailed__gallery--nojs swiper ">
+          <ul class="product-detailed__gallery-list swiper-wrapper">
+            <li class="product-detailed__gallery-item swiper__slide">
               <picture>
                 <!-- 1х: 97px; 2x: 194px -->
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -96,7 +96,7 @@
                   srcset="img/jpg/desktop/product-necklace-detail-view-1-desktop@2x.jpg" alt="Gold necklace for women">
               </picture>
             </li>
-            <li class="product-detailed__gallery-item">
+            <li class="product-detailed__gallery-item swiper__slide">
               <picture>
                 <!-- 1х: 97px; 2x: 194px -->
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -109,7 +109,7 @@
                   srcset="img/jpg/desktop/product-necklace-detail-view-2-desktop@2x.jpg" alt="Gold necklace for women">
               </picture>
             </li>
-            <li class="product-detailed__gallery-item">
+            <li class="product-detailed__gallery-item swiper__slide">
               <picture>
                 <!-- 1х: 97px; 2x: 194px -->
                 <source type="image/webp" media="(max-width: 1023px)"
@@ -122,7 +122,7 @@
                   srcset="img/jpg/desktop/product-necklace-detail-view-3-desktop@2x.jpg" alt="Gold necklace for women">
               </picture>
             </li>
-            <li class="product-detailed__gallery-item product-detailed__gallery-item--big">
+            <li class="product-detailed__gallery-item product-detailed__gallery-item--big swiper__slide">
               <picture>
                 <!-- 1х: 290px; 2x: 580px -->
                 <source type="image/webp" media="(max-width: 767px)"
@@ -139,6 +139,7 @@
               </picture>
             </li>
           </ul>
+          <div class="swiper__pagination swiper__pagination--product-detailed"></div>
         </div>
         <div class="product-detailed__info">
           <h2>Gold Necklace</h2>
