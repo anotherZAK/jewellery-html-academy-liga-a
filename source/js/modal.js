@@ -4,6 +4,7 @@
 var body = document.querySelector('.page-body');
 var modalLogin = document.querySelector('.modal--login');
 var modalCart = document.querySelector('.modal--cart');
+var mainNav = document.querySelector('.main-nav');
 
 if (modalLogin) {
   var loginButton = document.querySelector('.main-nav__login');
@@ -39,6 +40,9 @@ if (modalLogin) {
     evt.preventDefault();
     modalLogin.classList.add('modal--show');
     body.classList.add('page-body--block-modal');
+    body.classList.remove('page-body--fixed');
+    mainNav.classList.remove('main-nav--opened');
+    mainNav.classList.add('main-nav--closed');
 
     if (storageName) {
       userEmail.value = storageName;

@@ -74,6 +74,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .blog-card {
+    justify-content: center;
+  }
+
   .blog-card img {
     width: 339px;
   }

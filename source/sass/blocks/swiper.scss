@@ -13,12 +13,13 @@
   }
 
   &--products {
-    width: 100px;
+    left: 47.7%;
     display: flex;
     justify-content: space-between;
   }
 
   &--products span {
+    margin-right: 7px;
     padding: 3px;
     cursor: pointer;
   }
@@ -28,7 +29,7 @@
 .swiper__button-next {
   position: absolute;
   min-width: 40px;
-  top: 0;
+  top: 34px;
   cursor: pointer;
 
   &:hover svg {
@@ -39,14 +40,53 @@
 
 .swiper__button-prev {
   transform: rotate(180deg);
-  left: 0;
+  left: -21px;
 }
 
 .swiper__button-next {
-  right: 0;
+  right: -5px;
 }
 
 .swiper__button-prev svg,
 .swiper__button-next svg {
-  stroke: #a87b62;;
+  stroke: #a87b62;
+  ;
+}
+
+@media (max-width: $tablet-width) {
+  .swiper__pagination {
+    &--products {
+      left: 40.9%;
+    }
+  }
+
+  .swiper__button-prev,
+  .swiper__button-next {
+    top: 38px;
+    width: 40px;
+  }
+
+  .swiper__button-prev svg,
+  .swiper__button-next svg {
+    width: 38px;
+    height: 20px;
+  }
+
+  .swiper__button-prev {
+    left: -2px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .swiper__pagination {
+    &--products {
+      left: 41.5%;
+      letter-spacing: 2.3px;
+    }
+  }
+
+  .swiper__button-prev,
+  .swiper__button-next {
+    display: none;
+  }
 }

@@ -86,7 +86,7 @@
   }
 
   .faq h2 {
-    margin-bottom: 29px;
+    margin-bottom: 48px;
   }
 
   .faq__item {
@@ -118,6 +118,10 @@
 @media (max-width: $mobile-width) {
   .faq {
     margin-bottom: 57px;
+  }
+
+  .faq h2 {
+    margin-bottom: 28px;
   }
 
   .faq__item h3 {
