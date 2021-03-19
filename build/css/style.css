@@ -101,51 +101,19 @@ img {
     padding: 3px;
     cursor: pointer; }
 
-.swiper__button-prev,
-.swiper__button-next {
-  position: absolute;
-  min-width: 40px;
-  top: 34px;
-  cursor: pointer; }
-  .swiper__button-prev:hover svg,
-  .swiper__button-next:hover svg {
-    stroke: #000000;
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3); }
-
-.swiper__button-prev {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  left: -21px; }
-
-.swiper__button-next {
-  right: -5px; }
-
-.swiper__button-prev svg,
-.swiper__button-next svg {
-  stroke: #a87b62; }
-
 @media (max-width: 1023px) {
   .swiper__pagination--products {
     left: 40.9%; }
-  .swiper__button-prev,
-  .swiper__button-next {
-    top: 38px;
-    width: 40px; }
-  .swiper__button-prev svg,
-  .swiper__button-next svg {
-    width: 38px;
-    height: 20px; }
-  .swiper__button-prev {
-    left: -2px; } }
+  .swiper__pagination--product-detailed {
+    font-size: 14px; } }
 
 @media (max-width: 767px) {
   .swiper__pagination--products {
     left: 41.5%;
     letter-spacing: 2.3px; }
-  .swiper__button-prev,
-  .swiper__button-next {
-    display: none; } }
+  .swiper__pagination--product-detailed {
+    bottom: 3px;
+    left: 44%; } }
 
 .social-contacts__list {
   position: relative;
@@ -271,6 +239,52 @@ img {
   .slogan p {
     font-size: 22px; } }
 
+.range-filter {
+  position: relative; }
+
+.range-filter .range-filter__controls {
+  margin-left: 0; }
+
+.range-filter .range-filter__scale {
+  height: 1px;
+  width: 200px;
+  margin-left: -32px;
+  background-color: #e5e5e5; }
+
+.range-filter__controls .range-filter__bar {
+  height: 1px;
+  width: 46%;
+  margin-left: 58px;
+  background-color: #a87b62; }
+
+.range-filter__toggle {
+  position: absolute;
+  content: "";
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  background-color: #a87b62;
+  border-radius: 50%;
+  cursor: pointer; }
+  .range-filter__toggle--min {
+    left: -23px; }
+  .range-filter__toggle--max {
+    left: 82px; }
+  .range-filter__toggle:hover {
+    background-color: #c0744a; }
+
+.range-filter__price-controls {
+  position: relative; }
+
+.range-filter__price {
+  position: absolute;
+  top: -53px;
+  font-size: 14px; }
+  .range-filter__price--min {
+    left: -30px; }
+  .range-filter__price--max {
+    left: 73px; }
+
 .products p {
   margin: 0;
   margin-bottom: 23px;
@@ -287,7 +301,7 @@ img {
   margin-bottom: 110px;
   text-align: center; }
   .products--card {
-    margin-bottom: 150px; }
+    margin-bottom: 120px; }
     .products--card p {
       margin-bottom: 18px; }
 
@@ -335,30 +349,42 @@ img {
 .products__item {
   grid-row: 1 / 2; }
 
-.products__buttons {
-  text-align: center; }
-
-.products__button-left,
-.products__button-right {
+.products__gallery-button-prev,
+.products__gallery-button-next {
   position: absolute;
-  top: 0;
-  cursor: pointer;
-  stroke: #a87b62; }
+  min-width: 40px;
+  top: 34px;
+  cursor: pointer; }
+  .products__gallery-button-prev--card,
+  .products__gallery-button-next--card {
+    top: 38px; }
+  .products__gallery-button-prev:hover svg,
+  .products__gallery-button-next:hover svg {
+    stroke: #000000;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); }
 
-.products__button-left {
-  left: 0;
+.products__gallery-button-prev {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+          transform: rotate(180deg);
+  left: -21px; }
+  .products__gallery-button-prev--card {
+    left: -6px; }
 
-.products__button-right {
-  right: 0; }
+.products__gallery-button-next {
+  right: -5px; }
+
+.products__gallery-button-prev svg,
+.products__gallery-button-next svg {
+  stroke: #a87b62; }
 
 @media (max-width: 1023px) {
   .products {
     margin-top: 70px;
     margin-bottom: 61px; }
     .products--card {
-      margin-top: 66px; }
+      margin-top: 66px;
+      margin-bottom: 70px; }
   .products p {
     margin-bottom: 18px; }
   .products__link::after {
@@ -368,17 +394,31 @@ img {
     margin-top: 52px;
     padding-bottom: 43px; }
     .products__list--card {
-      margin-top: 53px; } }
+      margin-top: 53px; }
+  .products__gallery-button-prev,
+  .products__gallery-button-next {
+    top: 38px;
+    width: 40px; }
+  .products__gallery-button-prev svg,
+  .products__gallery-button-next svg {
+    width: 38px;
+    height: 20px; }
+  .products__gallery-button-prev {
+    left: -2px; } }
 
 @media (max-width: 767px) {
   .products {
     margin-top: 61px;
     margin-bottom: 53px; }
     .products--card {
-      margin-top: 50px; }
+      margin-top: 50px;
+      margin-bottom: 64px; }
   .products__list {
     margin-top: 42px;
-    padding-bottom: 31px; } }
+    padding-bottom: 31px; }
+  .products__gallery-button-prev,
+  .products__gallery-button-next {
+    display: none; } }
 
 .product-detailed {
   display: -webkit-box;
@@ -497,7 +537,7 @@ img {
 
 @media (max-width: 1023px) {
   .product-detailed {
-    margin-bottom: 66px; }
+    margin-bottom: 69px; }
   .product-detailed__gallery {
     margin-right: 40px;
     -ms-flex-preferred-size: 370px;
@@ -1621,7 +1661,7 @@ img {
           justify-content: space-between;
   margin: 0 auto;
   margin-top: 79px;
-  max-width: 1500px; }
+  max-width: 1400px; }
 
 .container-grid--footer {
   display: grid;
@@ -1710,6 +1750,13 @@ img {
     .container-background--slogan {
       background-image: url("../img/png/index-bg-slogan-tablet@2x.png"); } }
 
+@media (max-width: 1023px) {
+  .container-background--slogan-catalog {
+    background-image: url("../img/png/catalog-bg-slogan-tablet@1x.png"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+    .container-background--slogan-catalog {
+      background-image: url("../img/png/catalog-bg-slogan-tablet@2x.png"); } }
+
 @media (max-width: 767px) {
   .container-background--slogan {
     height: 463px;
@@ -1717,6 +1764,13 @@ img {
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .container-background--slogan {
       background-image: url("../img/png/index-bg-slogan-mobile@2x.png"); } }
+
+@media (max-width: 767px) {
+  .container-background--slogan-catalog {
+    background-image: url("../img/png/catalog-bg-slogan-mobile@1x.png"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .container-background--slogan-catalog {
+      background-image: url("../img/png/catalog-bg-slogan-mobile@2x.png"); } }
 
 .contacts__list {
   margin: 0;
@@ -1855,7 +1909,7 @@ img {
     padding-top: 22px;
     padding-bottom: 21px; } }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .catalog-form {
     margin-bottom: 40px; } }
 
@@ -1879,12 +1933,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
   z-index: 101; }
-
-.catalog-filter__item {
-  position: relative;
-  margin-bottom: -1px;
-  padding-left: 24px;
-  border: 1px solid #a87b62; }
 
 .catalog-filter__button {
   position: absolute;
@@ -1918,6 +1966,16 @@ img {
   .catalog-filter__item div:last-child {
     margin-bottom: 24px; }
 
+.catalog-filter__item {
+  position: relative;
+  margin-bottom: -1px;
+  padding-left: 24px;
+  border: 1px solid #a87b62; }
+  .catalog-filter__item:last-child div {
+    margin-bottom: 49px; }
+  .catalog-filter__item:last-child h3 {
+    margin-bottom: 25px; }
+
 .catalog-filter__item h3 {
   margin: 0;
   margin-top: 22px;
@@ -1936,9 +1994,16 @@ img {
     width: 16px;
     height: 16px;
     border: 1px solid #a87b62; }
+  .catalog-filter__item label:hover {
+    color: #a87b62; }
+  .catalog-filter__item label:active {
+    color: #c0744a; }
 
 .catalog-filter input[type="checkbox"]:checked + label::before {
   background-color: #a87b62; }
+
+.catalog-filter input[type="checkbox"]:active + label::before {
+  background-color: #c0744a; }
 
 .catalog-filter__submit {
   margin-bottom: 25px; }
@@ -1952,7 +2017,7 @@ img {
     .catalog-filter--open {
       display: block;
       position: absolute;
-      top: 0;
+      top: 39px;
       left: 0;
       width: 100%;
       height: 100%;

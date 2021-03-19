@@ -92,25 +92,25 @@
           <h2 class="visually-hidden">Product selection form</h2>
           <button class="catalog-form__filter-button btn btn--agree" type="button">Filter</button>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <div>
+            <div class="catalog-filter__wrapper">
               <ul class="catalog-filter__list">
                 <li class="catalog-filter__item">
                   <h3>Product</h3>
                   <button class="catalog-filter__button accordion accordion-00"><span class="visually-hidden">Toggle
                       button</span></button>
-                  <div>
+                  <div class="catalog-filter__checkgroup">
                     <input id="product-filter-necklaces" type="checkbox" name="product-filter-necklaces-id">
                     <label for="product-filter-necklaces">Necklaces</label>
                   </div>
-                  <div>
+                  <div class="catalog-filter__checkgroup">
                     <input id="product-filter-chokers" type="checkbox" name="product-filter-chokers-id">
                     <label for="product-filter-chokers">Chokers</label>
                   </div>
-                  <div>
+                  <div class="catalog-filter__checkgroup">
                     <input id="product-filter-rings" type="checkbox" name="product-filter-rings-id">
                     <label for="product-filter-rings">Rings</label>
                   </div>
-                  <div>
+                  <div class="catalog-filter__checkgroup">
                     <input id="product-filter-earrings" type="checkbox" name="product-filter-earrings-id">
                     <label for="product-filter-earrings">Earrings</label>
                   </div>
@@ -119,11 +119,11 @@
                   <h3>Material</h3>
                   <button class="catalog-filter__button accordion accordion-01"><span class="visually-hidden">Toggle
                       button</span></button>
-                  <div>
+                      <div class="catalog-filter__checkgroup">
                     <input id="material-filter-gold" type="checkbox" name="material-filter-gold-id">
                     <label for="material-filter-gold">Gold</label>
                   </div>
-                  <div>
+                  <div class="catalog-filter__checkgroup">
                     <input id="material-filter-silver" type="checkbox" name="material-filter-silver-id">
                     <label for="material-filter-silver">Silver</label>
                   </div>
@@ -132,12 +132,12 @@
                   <h3>Collection</h3>
                   <button class="catalog-filter__button accordion accordion-02"><span class="visually-hidden">Toggle
                       button</span></button>
-                  <div>
+                      <div class="catalog-filter__checkgroup">
                     <input id="collection-filter-pink-flamingo" type="checkbox"
                       name="collection-filter-pink-flamingo-id">
                     <label for="collection-filter-pink-flamingo">Pink flamingo</label>
                   </div>
-                  <div>
+                  <div class="catalog-filter__checkgroup">
                     <input id="collection-filter-dreams" type="checkbox" name="collection-filter-dreams-id">
                     <label for="collection-filter-dreams">Dreams</label>
                   </div>
@@ -151,12 +151,12 @@
                       <div class="range-filter__scale">
                         <div class="range-filter__bar"></div>
                       </div>
-                      <div class="range-filter__toggle range-filter__toggle-min" tabindex="0"></div>
-                      <div class="range-filter__toggle range-filter__toggle-max" tabindex="0"></div>
+                      <div class="range-filter__toggle range-filter__toggle--min" tabindex="0"></div>
+                      <div class="range-filter__toggle range-filter__toggle--max" tabindex="0"></div>
                     </div>
                     <div class="range-filter__price-controls">
                       <p class="range-filter__price range-filter__price--min">$ 55</p>
-                      <p class="range-filter__price range-filter__price--max">$ 55</p>
+                      <p class="range-filter__price range-filter__price--max">$ 155</p>
                     </div>
                   </div>
                 </li>
@@ -440,7 +440,7 @@
             </li>
           </ul>
           <div class="catalog-main__buttons">
-            <button class="catalog-main__button catalog-main-button--previos" type="button">Previous</button>
+            <button class="catalog-main__button catalog-main__button--previos" type="button">Previous</button>
             <div>
               <button class="catalog-main__button-nav" type="button">1</button>
               <button class="catalog-main__button-nav" type="button">2</button>
@@ -448,7 +448,7 @@
               <button class="catalog-main__button-nav" type="button">4</button>
               <button class="catalog-main__button-nav" type="button">5</button>
             </div>
-            <button class="catalog-main__button catalog-main-button--next" type="button">Next</button>
+            <button class="catalog-main__button catalog-main__button--next" type="button">Next</button>
           </div>
         </section>
       </div>
