@@ -166,6 +166,7 @@
         margin: 0;
         padding-left: 0;
         width: 100%;
+        height: fit-content;
       }
 
       .main-nav__subitem {
@@ -275,6 +276,7 @@
         margin: 0;
         padding-left: 0;
         width: 100%;
+        height: fit-content;
       }
 
       .main-nav__sublist {
@@ -391,7 +393,7 @@
       top: -250px;
       left: -485px;
       width: 1520px;
-      height: 450%;
+      height: 550%;
       background-color: #a87b62;
       z-index: -10;
     }

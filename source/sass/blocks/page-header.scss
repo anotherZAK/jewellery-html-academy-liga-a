@@ -7,8 +7,43 @@
     margin-top: 42px;
   }
 
+  &--catalog + main {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 110px;
+      width: 100%;
+      height: 1px;
+      background-color: #f6f5f4;
+    }
+  }
+
   &--card {
     margin-bottom: 89px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 170px;
+      width: 100%;
+      height: 1px;
+      background-color: #f6f5f4;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 110px;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f5f4;
+  }
+
+  &--hide {
+    display: none;
   }
 }
 
@@ -18,6 +53,14 @@
 
     &--card {
       margin-bottom: 44px;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    &::after {
+      content: none;
     }
   }
 }
@@ -26,5 +69,13 @@
   .page-header {
     margin-top: 20px;
     margin-bottom: 13px;
+
+    &--catalog + main {
+      position: relative;
+  
+      &::after {
+        content: none;
+      }
+    }
   }
 }

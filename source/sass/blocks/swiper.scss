@@ -25,6 +25,14 @@
   }
 }
 
+.swiper__pagination-bullet {
+  color: #9b9997;
+
+  &--active {
+    color: #1d1613;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .swiper__pagination {
     &--products {

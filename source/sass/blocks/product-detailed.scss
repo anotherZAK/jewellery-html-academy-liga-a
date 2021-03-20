@@ -95,6 +95,8 @@
 }
 
 .product-detailed__info .product-detailed__button {
+  display: block;
+  text-align: center;
   margin-bottom: 13px;
   padding-top: 22px;
   padding-bottom: 21px;
@@ -169,18 +171,21 @@
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 0 auto;
+      margin-top: 15px;
       max-width: 470px;
     }
 
-    &--nojs .product-detailed__gallery-list .product-detailed__gallery-item {
+    &--nojs .product-detailed__gallery-item {
       margin: 0;
-      margin-right: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
 
       &--big {
         order: -1;
       }
 
       &:last-child {
+        margin-left: 0;
         margin-right: 0;
       }
     }

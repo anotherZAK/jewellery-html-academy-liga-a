@@ -61,7 +61,7 @@
     grid-row: auto;
   }
 
-  &--nojs .products__gallery-buttons {
+  &--nojs + .products__gallery-buttons {
     display: none;
   }
 }

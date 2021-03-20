@@ -43,14 +43,12 @@ function initProductsSwiper() {
 
   if (screenWidth < breakpointMobile && productsSwiperSelector) {
     productsSwiperSelector.classList.remove('products__gallery--nojs');
-    if (productsSwiperDesktop) {
-      productsSwiperDesktop.destroy();
+    if (productsSwiperTablet) {
       productsSwiperTablet.destroy();
-      productsSwiperDesktop = undefined;
       productsSwiperTablet = undefined;
     }
 
-    productsSwiperTablet = new Swiper('.swiper--products', {
+    productsSwiperMobile = new Swiper('.swiper--products', {
       slideClass: 'swiper__slide',
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -67,12 +65,13 @@ function initProductsSwiper() {
         prevEl: '.swiper__button-prev',
       },
     });
-  } else if (screenWidth < breakpointTablet && productsSwiperSelector) {
+  } else if (screenWidth < breakpointTablet && screenWidth > breakpointMobile && productsSwiperSelector) {
     productsSwiperSelector.classList.remove('products__gallery--nojs');
-    if (productsSwiperDesktop) {
+    if (productsSwiperTablet ) {
+      productsSwiperTablet.destroy();
+      productsSwiperTablet = undefined;
+    } else if (productsSwiperMobile) {
       productsSwiperMobile.destroy();
-      productsSwiperDesktop.destroy();
-      productsSwiperDesktop = undefined;
       productsSwiperMobile = undefined;
     }
 
@@ -84,6 +83,8 @@ function initProductsSwiper() {
       pagination: {
         el: '.swiper__pagination--products',
         clickable: true,
+        bulletClass: 'swiper__pagination-bullet',
+        bulletActiveClass: 'swiper__pagination-bullet--active',
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
@@ -96,10 +97,8 @@ function initProductsSwiper() {
   } else if (screenWidth > breakpointTablet && productsSwiperSelector) {
     productsSwiperSelector.classList.remove('products__gallery--nojs');
     if (productsSwiperTablet) {
-      productsSwiperMobile.destroy();
       productsSwiperTablet.destroy();
       productsSwiperTablet = undefined;
-      productsSwiperMobile = undefined;
     }
 
     productsSwiperDesktop = new Swiper('.swiper--products', {
@@ -110,6 +109,8 @@ function initProductsSwiper() {
       pagination: {
         el: '.swiper__pagination--products',
         clickable: true,
+        bulletClass: 'swiper__pagination-bullet',
+        bulletActiveClass: 'swiper__pagination-bullet--active',
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
