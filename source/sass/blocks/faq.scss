@@ -168,6 +168,15 @@
 
   .faq__button {
     top: 15px;
-    right: -24px;
+    right: 0;
+
+    &::after,
+    &::before {
+      right: 32px;
+    }
+
+    &::before {
+      right: 22px;
+    }
   }
 }

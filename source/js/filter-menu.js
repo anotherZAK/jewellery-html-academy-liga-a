@@ -7,9 +7,16 @@ if (filterButton) {
   var header = body.querySelector('.page-header');
   var filterMenu = document.querySelector('.catalog-filter');
   var filterMenuClose = document.querySelector('.catalog-filter__close');
+  var rangeFilter = filterMenu.querySelector('.range-filter');
+  var rangeBar = rangeFilter.querySelector('.range-filter__bar');
+  var minPrice = rangeFilter.querySelector('.range-filter__price--min');
+  var maxPrice = rangeFilter.querySelector('.range-filter__price--max');
 
   filterMenu.classList.remove('catalog-filter--nojs');
-
+  rangeFilter.classList.remove('range-filter--nojs');
+  rangeBar.classList.remove('range-filter__bar--nojs');
+  minPrice.textContent = '$ 55';
+  maxPrice.textContent = '$ 155';
 
   filterButton.addEventListener('click', function (evt) {
     evt.preventDefault();

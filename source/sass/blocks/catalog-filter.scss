@@ -1,6 +1,6 @@
 .catalog-filter__list {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   padding: 0;
   min-width: 250px;
   list-style: none;
@@ -101,7 +101,7 @@
   &:hover {
     color: #a87b62;
   }
-  
+
   &:active {
     color: saturate($color: #a87b62, $amount: 20);
   }
@@ -182,12 +182,12 @@
       .catalog-filter__button {
         top: -14px;
         right: 22px;
-      
+
         &::after,
         &::before {
           width: 18px;
         }
-      
+
         &::before {
           right: 12.5px;
         }
@@ -199,7 +199,7 @@
             transform: rotate(-45deg);
             right: 12.5px;
           }
-      
+
           &::after {
             transform: rotate(45deg);
           }
@@ -263,11 +263,11 @@
         top: -7px;
         width: 18px;
         height: 18px;
-      
+
         &--min {
           left: -16px;
         }
-      
+
         &--max {
           left: 160px;
         }
@@ -276,11 +276,11 @@
       .range-filter__price {
         top: -9px;
         font-size: 16px;
-      
+
         &--min {
           left: -23px;
         }
-      
+
         &--max {
           left: 149px;
         }
@@ -321,7 +321,6 @@
 
 @media (max-width: $mobile-width) {
   .catalog-filter {
-
     &--open {
       padding-top: 62px;
 
@@ -365,12 +364,12 @@
       .catalog-filter__button {
         top: -9px;
         right: 2px;
-      
+
         &::after,
         &::before {
           width: 13px;
         }
-      
+
         &::before {
           right: 16.5px;
         }
@@ -382,7 +381,7 @@
             transform: rotate(-45deg);
             right: 16.5px;
           }
-      
+
           &::after {
             transform: rotate(45deg);
           }
@@ -413,11 +412,11 @@
         top: -7px;
         width: 18px;
         height: 18px;
-      
+
         &--min {
           left: -39px;
         }
-      
+
         &--max {
           left: 99px;
         }
@@ -426,11 +425,11 @@
       .range-filter__price {
         top: -9px;
         font-size: 16px;
-      
+
         &--min {
           left: -47px;
         }
-      
+
         &--max {
           left: 88px;
         }

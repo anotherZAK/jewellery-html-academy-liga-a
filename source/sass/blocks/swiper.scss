@@ -4,16 +4,14 @@
 
 .swiper__pagination {
   display: none;
-  position: absolute;
-  bottom: 0;
-  left: 45%;
+  margin: 0 auto;
+  width: max-content;
 
   &--show {
     display: block;
   }
 
   &--products {
-    left: 47.7%;
     display: flex;
     justify-content: space-between;
   }
@@ -53,8 +51,9 @@
     }
 
     &--product-detailed {
-      bottom: 3px;
-      left: 44%;
+      position: relative;
+      margin: 0 auto;
+      margin-top: -24px;
     }
   }
 }

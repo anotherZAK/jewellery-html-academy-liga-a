@@ -1,6 +1,8 @@
 .product-detailed {
   display: flex;
+  margin: 0 auto;
   margin-bottom: 100px;
+  max-width: 1170.4px;
 }
 
 .product-detailed__gallery {
@@ -67,9 +69,10 @@
   display: inline-block;
   margin-right: 31px;
   vertical-align: middle;
+  color: #9b9997;
 
-  &--description {
-    color: #9b9997;
+  &--active {
+    color: #1d1613;
   }
 }
 

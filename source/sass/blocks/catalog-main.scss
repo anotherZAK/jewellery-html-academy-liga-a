@@ -35,6 +35,14 @@
   }
 }
 
+.catalog-main__buttons .catalog-main__button-nav {
+  color: #9b9997;
+
+  &--active {
+    color: #1d1613;
+  }
+}
+
 .catalog-main__buttons div {
   margin-left: -41px;
 }

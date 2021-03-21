@@ -1,5 +1,27 @@
 .range-filter {
   position: relative;
+
+  &--nojs {
+    .range-filter__toggle {
+      &--min {
+        left: -75px;
+      }
+
+      &--max {
+        left: 126px;
+      }
+    }
+
+    .range-filter__price {
+      &--min {
+        left: -80px;
+      }
+
+      &--max {
+        left: 113px;
+      }
+    }
+  }
 }
 
 .range-filter .range-filter__controls {
@@ -18,6 +40,11 @@
   width: 46%;
   margin-left: 58px;
   background-color: #a87b62;
+
+  &--nojs {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .range-filter__toggle {
@@ -49,7 +76,7 @@
 
 .range-filter__price {
   position: absolute;
-  top: -53px;
+  top: -8px;
   font-size: 14px;
 
   &--min {

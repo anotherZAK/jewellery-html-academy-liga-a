@@ -39,3 +39,13 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .accordion {
+    &--closed {
+      &::before {
+        right: 21px;
+      }
+    }
+  }
+}
