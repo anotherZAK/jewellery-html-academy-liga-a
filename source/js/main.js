@@ -11742,99 +11742,14 @@ var components = [_esm_components_virtual_virtual__WEBPACK_IMPORTED_MODULE_1__.d
 _esm_components_core_core_class__WEBPACK_IMPORTED_MODULE_0__.default.use(components);
 
 
-/***/ })
+/***/ }),
 
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	}();
-/******/ 	
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
-/*!**********************************!*\
-  !*** ./source/js/burger-menu.js ***!
-  \**********************************/
-
-
-(function () {
-  var body = document.querySelector('.page-body');
-  var burgerToggle = document.querySelector('.burger');
-  var mainNav = document.querySelector('.main-nav');
-  var pageHeader = document.querySelector('.page-header');
-
-  mainNav.classList.remove('main-nav--nojs');
-  pageHeader.classList.add('page-header--js');
-
-
-  burgerToggle.addEventListener('click', function () {
-    body.classList.toggle('page-body--fixed');
-    mainNav.classList.toggle('main-nav--opened');
-    mainNav.classList.toggle('main-nav--closed');
-
-    var mainNavList = mainNav.querySelector('.main-nav__list');
-
-    var mainNavListCompute = getComputedStyle(mainNavList);
-    body.style.setProperty('--element-height', 2.2 * parseFloat(mainNavListCompute.height) + 'px');
-  });
-})();
-
-}();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
+/***/ "./source/js/accordion.js":
 /*!********************************!*\
   !*** ./source/js/accordion.js ***!
   \********************************/
+/***/ (function() {
+
 
 
 (function () {
@@ -11880,12 +11795,103 @@ var __webpack_exports__ = {};
   }
 })();
 
-}();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
+
+/***/ }),
+
+/***/ "./source/js/burger-menu.js":
+/*!**********************************!*\
+  !*** ./source/js/burger-menu.js ***!
+  \**********************************/
+/***/ (function() {
+
+
+
+(function () {
+  var body = document.querySelector('.page-body');
+  var burgerToggle = document.querySelector('.burger');
+  var mainNav = document.querySelector('.main-nav');
+  var pageHeader = document.querySelector('.page-header');
+
+  mainNav.classList.remove('main-nav--nojs');
+  pageHeader.classList.add('page-header--js');
+
+
+  burgerToggle.addEventListener('click', function () {
+    body.classList.toggle('page-body--fixed');
+    mainNav.classList.toggle('main-nav--opened');
+    mainNav.classList.toggle('main-nav--closed');
+
+    var mainNavList = mainNav.querySelector('.main-nav__list');
+
+    var mainNavListCompute = getComputedStyle(mainNavList);
+    body.style.setProperty('--element-height', 2.2 * parseFloat(mainNavListCompute.height) + 'px');
+  });
+})();
+
+
+/***/ }),
+
+/***/ "./source/js/filter-menu.js":
+/*!**********************************!*\
+  !*** ./source/js/filter-menu.js ***!
+  \**********************************/
+/***/ (function() {
+
+
+
+(function () {
+  var filterButton = document.querySelector('.catalog-form__filter-button');
+
+  if (filterButton) {
+    var body = document.querySelector('.page-body');
+    var header = body.querySelector('.page-header');
+    var filterMenu = document.querySelector('.catalog-filter');
+    var filterMenuClose = document.querySelector('.catalog-filter__close');
+    var rangeFilter = filterMenu.querySelector('.range-filter');
+    var rangeBar = rangeFilter.querySelector('.range-filter__bar');
+    var minPrice = rangeFilter.querySelector('.range-filter__price--min');
+    var maxPrice = rangeFilter.querySelector('.range-filter__price--max');
+
+    filterMenu.classList.remove('catalog-filter--nojs');
+    rangeFilter.classList.remove('range-filter--nojs');
+    rangeBar.classList.remove('range-filter__bar--nojs');
+    minPrice.textContent = '$ 55';
+    maxPrice.textContent = '$ 155';
+
+    filterButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      body.classList.add('page-body--fixed-filter');
+      header.classList.add('page-header--hide');
+      filterMenu.classList.add('catalog-filter--open');
+    });
+
+    filterMenuClose.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      body.classList.remove('page-body--fixed-filter');
+      header.classList.remove('page-header--hide');
+      filterMenu.classList.remove('catalog-filter--open');
+    });
+
+    window.addEventListener('keydown', function (evt) {
+      if (evt.key === 'Escape') {
+        evt.preventDefault();
+        body.classList.remove('page-body--fixed-filter');
+        header.classList.remove('page-header--hide');
+        filterMenu.classList.remove('catalog-filter--open');
+      }
+    });
+  }
+})();
+
+
+/***/ }),
+
+/***/ "./source/js/modal.js":
 /*!****************************!*\
   !*** ./source/js/modal.js ***!
   \****************************/
+/***/ (function() {
+
 
 
 (function () {
@@ -12024,65 +12030,15 @@ var __webpack_exports__ = {};
   }
 })();
 
-}();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
-/*!**********************************!*\
-  !*** ./source/js/filter-menu.js ***!
-  \**********************************/
 
+/***/ }),
 
-(function () {
-  var filterButton = document.querySelector('.catalog-form__filter-button');
-
-  if (filterButton) {
-    var body = document.querySelector('.page-body');
-    var header = body.querySelector('.page-header');
-    var filterMenu = document.querySelector('.catalog-filter');
-    var filterMenuClose = document.querySelector('.catalog-filter__close');
-    var rangeFilter = filterMenu.querySelector('.range-filter');
-    var rangeBar = rangeFilter.querySelector('.range-filter__bar');
-    var minPrice = rangeFilter.querySelector('.range-filter__price--min');
-    var maxPrice = rangeFilter.querySelector('.range-filter__price--max');
-
-    filterMenu.classList.remove('catalog-filter--nojs');
-    rangeFilter.classList.remove('range-filter--nojs');
-    rangeBar.classList.remove('range-filter__bar--nojs');
-    minPrice.textContent = '$ 55';
-    maxPrice.textContent = '$ 155';
-
-    filterButton.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      body.classList.add('page-body--fixed-filter');
-      header.classList.add('page-header--hide');
-      filterMenu.classList.add('catalog-filter--open');
-    });
-
-    filterMenuClose.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      body.classList.remove('page-body--fixed-filter');
-      header.classList.remove('page-header--hide');
-      filterMenu.classList.remove('catalog-filter--open');
-    });
-
-    window.addEventListener('keydown', function (evt) {
-      if (evt.key === 'Escape') {
-        evt.preventDefault();
-        body.classList.remove('page-body--fixed-filter');
-        header.classList.remove('page-header--hide');
-        filterMenu.classList.remove('catalog-filter--open');
-      }
-    });
-  }
-})();
-
-
-}();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
+/***/ "./source/js/swiper.js":
 /*!*****************************!*\
   !*** ./source/js/swiper.js ***!
   \*****************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.esm.js");
 
@@ -12220,6 +12176,71 @@ __webpack_require__.r(__webpack_exports__);
   });
 })();
 
-}();
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		if(__webpack_module_cache__[moduleId]) {
+/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	// startup
+/******/ 	// Load entry module
+/******/ 	__webpack_require__("./source/js/burger-menu.js");
+/******/ 	__webpack_require__("./source/js/accordion.js");
+/******/ 	__webpack_require__("./source/js/modal.js");
+/******/ 	__webpack_require__("./source/js/filter-menu.js");
+/******/ 	__webpack_require__("./source/js/swiper.js");
+/******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;
