@@ -163,9 +163,9 @@
         position: static;
         display: block;
         grid-row: 3 / 4;
+        width: 100%;
         margin: 0;
         padding-left: 0;
-        width: 100%;
         height: fit-content;
       }
 
@@ -216,9 +216,9 @@
 
       .main-nav__login {
         position: absolute;
-        padding-right: 77%;
-        left: -4px;
         top: 645px;
+        left: -4px;
+        padding-right: 77%;
         font-size: 18px;
         color: #ffffff;
 
@@ -255,15 +255,15 @@
     }
 
     &--opened {
-      grid-template-rows: min-content min-content 1fr 1fr;
       position: absolute;
-      margin: 0;
-      padding-top: 0;
       left: 0;
       right: 0;
+      z-index: 100;
+      grid-template-rows: min-content min-content 1fr 1fr;
       width: 100%;
       height: 100%;
-      z-index: 100;
+      margin: 0;
+      padding-top: 0;
       background-color: #ffffff;
 
       .main-nav__logo-icon {
@@ -271,11 +271,10 @@
       }
 
       .main-nav__list {
-        grid-row: 3 / 4;
         display: block;
+        width: 100%;
         margin: 0;
         padding-left: 0;
-        width: 100%;
         height: fit-content;
       }
 
@@ -313,12 +312,12 @@
       }
 
       .main-nav__form input {
+        width: 100%;
         padding-top: 12px;
         padding-left: 35px;
         padding-bottom: 12px;
         color: #ffffff;
         background-color: #b58f7a;
-        width: 100%;
 
         &:hover,
         &:focus {
@@ -332,9 +331,9 @@
 
       .main-nav__login {
         position: absolute;
-        padding-right: 77%;
         left: 41px;
         top: 637px;
+        padding-right: 77%;
         font-size: 18px;
         color: #ffffff;
 
@@ -401,12 +400,12 @@
 
   .main-nav__link {
     position: relative;
-    font-size: 24px;
-    font-weight: 400;
     padding-left: 45px;
     padding-top: 13px;
     padding-right: 43%;
     padding-bottom: 13px;
+    font-weight: 400;
+    font-size: 24px;
     color: #ffffff;
     opacity: 1;
 

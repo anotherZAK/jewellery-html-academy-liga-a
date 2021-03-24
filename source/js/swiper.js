@@ -1,6 +1,7 @@
 'use strict';
 
-import Swiper from 'swiper/bundle';
+import Swiper, { Navigation, Pagination } from 'swiper/core';
+Swiper.use([Navigation, Pagination]);
 
 (function () {
   var cartSwiper = undefined;
@@ -16,7 +17,7 @@ import Swiper from 'swiper/bundle';
   function initCartSwiper() {
     var screenWidth = document.documentElement.clientWidth;
 
-    if (screenWidth < breakpointMobile && cartSwiper === undefined && cartSwiperSelector) {
+    if (screenWidth <= breakpointMobile && cartSwiper === undefined && cartSwiperSelector) {
       cartSwiperSelector.classList.remove('product-detailed__gallery--nojs');
       swiperPagination = document.querySelector('.swiper__pagination');
       swiperPagination.classList.add('swiper__pagination--show');
@@ -42,7 +43,7 @@ import Swiper from 'swiper/bundle';
   function initProductsSwiper() {
     var screenWidth = document.documentElement.clientWidth;
 
-    if (screenWidth < breakpointMobile && productsSwiperSelector) {
+    if (screenWidth <= breakpointMobile && productsSwiperSelector) {
       productsSwiperSelector.classList.remove('products__gallery--nojs');
       if (productsSwiperTablet) {
         productsSwiperTablet.destroy();
@@ -66,11 +67,11 @@ import Swiper from 'swiper/bundle';
           prevEl: '.products__gallery-button-prev',
         },
       });
-    } else if (screenWidth < breakpointTablet && screenWidth > breakpointMobile && productsSwiperSelector) {
+    } else if (screenWidth <= breakpointTablet && screenWidth > breakpointMobile && productsSwiperSelector) {
       productsSwiperSelector.classList.remove('products__gallery--nojs');
-      if (productsSwiperTablet) {
-        productsSwiperTablet.destroy();
-        productsSwiperTablet = undefined;
+      if (productsSwiperDesktop) {
+        productsSwiperDesktop.destroy();
+        productsSwiperDesktop = undefined;
       } else if (productsSwiperMobile) {
         productsSwiperMobile.destroy();
         productsSwiperMobile = undefined;

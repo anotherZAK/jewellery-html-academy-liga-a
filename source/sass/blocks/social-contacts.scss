@@ -28,8 +28,8 @@
 }
 
 .social-contacts__name {
-  text-align: left;
   padding-left: 11px;
+  text-align: left;
 }
 
 @media (max-width: $tablet-width) {
@@ -41,9 +41,9 @@
 
 @media (max-width: $mobile-width) {
   .social-contacts__list {
+    right: 4px;
     display: flex;
     flex-wrap: wrap;
-    right: 4px;
   }
 
   .social-contacts__item {

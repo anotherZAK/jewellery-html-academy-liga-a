@@ -1,8 +1,8 @@
 .accordion {
   &--closed {
     &::before {
-      transform: rotate(-45deg);
       right: 49px;
+      transform: rotate(-45deg);
     }
 
     &::after {
@@ -12,8 +12,8 @@
 
   &--filter-closed {
     &::before {
-      transform: rotate(-45deg);
       right: 18px;
+      transform: rotate(-45deg);
     }
 
     &::after {

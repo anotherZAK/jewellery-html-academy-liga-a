@@ -21,13 +21,13 @@
 .catalog-main__buttons button {
   padding: 0;
   padding-right: 9px;
-  font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  font-family: $main-font;
   color: #1d1613;
-  border: none;
   background-color: transparent;
+  border: none;
   cursor: pointer;
 
   &:last-child {
@@ -55,7 +55,7 @@
   .catalog-main__list {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 13.5px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   .catalog-main__button {
@@ -65,9 +65,9 @@
   .catalog-main__buttons div {
     display: flex;
     justify-content: space-between;
+    min-width: 137px;
     margin-left: auto;
     margin-right: auto;
-    min-width: 137px
   }
 
   .catalog-main__buttons button {

@@ -6,10 +6,10 @@
 .blog h2 {
   margin: 0;
   margin-bottom: 18px;
-  font-family: $second-font;
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
+  font-family: $second-font;
   text-align: center;
   color: #1d1613;
 }
@@ -46,10 +46,10 @@
   grid-template-rows: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 30px;
+  max-width: 1400px;
   margin: 0 auto;
   margin-top: 63px;
   padding: 0;
-  max-width: 1400px;
   list-style: none;
 }
 

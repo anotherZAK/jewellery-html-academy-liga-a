@@ -1,50 +1,50 @@
 .catalog-filter__list {
-  margin: 0;
-  margin-bottom: 38px;
-  padding: 0;
   min-width: 250px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
   list-style: none;
 }
 
 .catalog-filter input[type="checkbox"] {
   position: absolute;
+  z-index: 101;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  z-index: 101;
 }
 
 .catalog-filter__button {
   position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 101;
   padding-top: 22px;
   padding-bottom: 20px;
   padding-left: 92%;
-  top: 10px;
-  right: 5px;
-  border: none;
   background-color: transparent;
+  border: none;
   cursor: pointer;
-  z-index: 101;
 
   &::after,
   &::before {
     position: absolute;
     content: "";
+    right: 25px;
     width: 10px;
     height: 1px;
-    right: 25px;
     background-color: #a87b62;
   }
 
   &::before {
-    transform: rotate(45deg);
     right: 18px;
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -80,8 +80,8 @@
   margin: 0;
   margin-top: 22px;
   margin-bottom: 19px;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .catalog-filter__item label {
@@ -132,18 +132,18 @@
     display: none;
 
     &--open {
-      display: block;
       position: absolute;
       top: 0;
       left: 0;
-      padding-top: 26px;
+      display: block;
       width: 100%;
       height: 100%;
-      background-color: white;
+      padding-top: 26px;
+      background-color: #ffffff;
 
       .catalog-filter__wrapper {
-        padding-bottom: 40px;
         width: 54.7%;
+        padding-bottom: 40px;
         box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
         border-top: 1px solid transparent;
       }
@@ -196,8 +196,8 @@
       .accordion {
         &--filter-closed {
           &::before {
-            transform: rotate(-45deg);
             right: 12.5px;
+            transform: rotate(-45deg);
           }
 
           &::after {
@@ -207,10 +207,10 @@
       }
 
       .catalog-filter__close {
-        display: block;
         position: absolute;
         top: 12px;
         right: calc(45.3% - 19px);
+        display: block;
         width: 32px;
         height: 32px;
         background-color: #000000;
@@ -325,9 +325,9 @@
       padding-top: 62px;
 
       .catalog-filter__wrapper {
+        width: 84.4%;
         margin-left: auto;
         margin-right: auto;
-        width: 84.4%;
       }
 
       .catalog-filter__list {
@@ -378,8 +378,8 @@
       .accordion {
         &--filter-closed {
           &::before {
-            transform: rotate(-45deg);
             right: 16.5px;
+            transform: rotate(-45deg);
           }
 
           &::after {
@@ -400,8 +400,8 @@
       }
 
       .range-filter__scale {
-        margin-left: -55px;
         width: 250px;
+        margin-left: -55px;
       }
 
       .range-filter__bar {

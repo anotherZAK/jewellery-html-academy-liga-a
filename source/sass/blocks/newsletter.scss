@@ -1,10 +1,10 @@
 .newsletter h2 {
   margin: 0;
   margin-bottom: 10px;
-  font-family: $second-font;
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
+  font-family: $second-font;
   letter-spacing: 0.024em;
   color: #ffffff;
 }
@@ -23,23 +23,23 @@
   &::after {
     position: absolute;
     content: "";
-    width: 90%;
-    height: 1px;
     top: 35px;
     left: 0;
+    width: 90%;
+    height: 1px;
     background-color: #ffffff;
   }
 }
 
 .newsletter__form input {
+  width: 60%;
   margin-right: 10%;
   padding-top: 6px;
   padding-bottom: 6px;
-  width: 60%;
-  font-family: $main-font;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  font-family: $main-font;
   color: #9b9997;
   background-color: transparent;
   border: none;
@@ -53,7 +53,7 @@
 
 .newsletter__form button {
   padding: 6px;
-  padding-right: 50px;
+  padding-right: 45px;
   font-size: 16px;
   letter-spacing: 0.3px;
   color: #ffffff;
@@ -73,7 +73,7 @@
 }
 
 .newsletter__icon {
-  margin-left: -36px;
+  margin-left: -33px;
   stroke: #ffffff;
 }
 
@@ -113,5 +113,14 @@
 
   .newsletter__form input {
     margin-right: 1px;
+  }
+
+  .newsletter__form button {
+    padding-right: 40px;
+    padding-left: 11px;
+  }
+
+  .newsletter__icon {
+    margin-left: -29px;
   }
 }

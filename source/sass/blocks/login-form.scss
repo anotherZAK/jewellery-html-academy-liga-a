@@ -1,18 +1,18 @@
 .login-form {
-  margin: 0 auto;
   max-width: 340px;
+  margin: 0 auto;
 }
 
 .login-form input {
   display: block;
+  width: 100%;
   margin-bottom: 27px;
   padding-top: 6px;
   padding-bottom: 9px;
-  width: 100%;
-  font-family: $main-font;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  font-family: $main-font;
   color: #9b9997;
   background-color: transparent;
   border: none;
@@ -39,8 +39,8 @@
 .login-form__forgot-link {
   display: block;
   margin-bottom: 44px;
-  text-align: right;
   font-size: 12px;
+  text-align: right;
   color: #9b9997;
 
   &:hover {
@@ -100,10 +100,10 @@
   margin-right: 10px;
   margin-left: 53px;
   padding-top: 0;
-  font-family: $main-font;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  font-family: $main-font;
   color: #9b9997;
 }
 

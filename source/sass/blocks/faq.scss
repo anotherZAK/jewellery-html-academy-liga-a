@@ -1,31 +1,31 @@
 .faq {
-  margin-bottom: 109px;
+  margin-bottom: 107px;
 }
 
 .faq h2 {
   margin: 0;
   margin-bottom: 49px;
-  font-family: $second-font;
   font-weight: 700;
   font-size: 34px;
   line-height: 44px;
+  font-family: $second-font;
   letter-spacing: 0.03em;
   text-align: center;
   color: #1d1613;
 }
 
 .faq__list {
+  max-width: 970px;
   margin: auto;
   padding: 0;
-  max-width: 970px;
   list-style: none;
 }
 
 .faq__item {
   position: relative;
-  border: 1px solid #a87b62;
   margin-bottom: -1px;
   padding-bottom: 38px;
+  border: 1px solid #a87b62;
 }
 
 .faq__item-break {
@@ -37,35 +37,35 @@
   margin-top: 43px;
   margin-bottom: 6px;
   padding-left: 43px;
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 .faq__button {
   position: absolute;
+  top: 42px;
   padding-top: 12px;
   padding-bottom: 17px;
   padding-left: 90%;
   padding-right: 10%;
-  top: 42px;
-  border: none;
   background-color: transparent;
+  border: none;
   cursor: pointer;
 
   &::after,
   &::before {
     position: absolute;
     content: "";
-    width: 10px;
-    height: 1px;
     top: 13px;
     right: 56px;
+    width: 10px;
+    height: 1px;
     background-color: #a87b62;
   }
 
   &::before {
-    transform: rotate(45deg);
     right: 49px;
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -74,9 +74,9 @@
 }
 
 .faq__item p {
+  max-width: 563px;
   margin: 0;
   padding-left: 50px;
-  max-width: 563px;
   line-height: 22px;
 }
 
@@ -110,8 +110,8 @@
   }
 
   .faq__item p {
-    padding-bottom: 25px;
     max-width: 583px;
+    padding-bottom: 25px;
   }
 }
 

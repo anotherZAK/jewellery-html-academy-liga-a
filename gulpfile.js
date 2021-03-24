@@ -126,6 +126,7 @@ gulp.task(`copy`, function () {
     `source/img/jpg//**/*`,
     `source/img/svg/*`,
     `source/js/main.js`,
+    `source/js/vendor.js`,
     `source//*.ico`
   ], {
     base: `source`

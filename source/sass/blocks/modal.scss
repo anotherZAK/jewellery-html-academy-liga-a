@@ -1,12 +1,12 @@
 .modal {
-  display: none;
   position: fixed;
-  margin: auto;
   top: 50%;
   right: 0;
   left: 0;
-  transform: translateY(-50%);
   z-index: 101;
+  display: none;
+  margin: auto;
+  transform: translateY(-50%);
 
   &--show {
     display: block;
@@ -36,11 +36,11 @@
     margin: 0;
     margin-bottom: 26px;
     padding-top: 187px;
-    text-align: center;
-    font-family: $second-font;
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
+    font-family: $second-font;
+    text-align: center;
   }
 
   &--cart {
@@ -63,11 +63,11 @@
     margin: 0;
     margin-bottom: 41px;
     padding-top: 46px;
-    text-align: center;
-    font-family: $second-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 34px;
+    font-family: $second-font;
+    text-align: center;
   }
 }
 

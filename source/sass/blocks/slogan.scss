@@ -1,7 +1,7 @@
 .slogan {
   position: relative;
-  padding-top: 188px;
   z-index: 1;
+  padding-top: 188px;
 }
 
 .slogan p {
@@ -11,21 +11,21 @@
 }
 
 .slogan__title {
-  font-family: $second-font;
   font-weight: 700;
   font-size: 45px;
   line-height: 58px;
+  font-family: $second-font;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .slogan__text {
-  font-family: $second-font;
   font-style: italic;
   font-weight: 400;
   font-size: 38px;
   line-height: 49px;
+  font-family: $second-font;
   color: #ffffff;
 }
 
