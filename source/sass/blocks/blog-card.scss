@@ -1,6 +1,7 @@
 .blog-card {
   position: relative;
   display: flex;
+  background-color: #f0eae4;
 }
 
 .blog-card img {
@@ -13,6 +14,7 @@
   align-items: center;
   min-width: 50%;
   padding-top: 12%;
+  padding-bottom: 10px;
   background-color: #f0eae4;
 
   &--big {

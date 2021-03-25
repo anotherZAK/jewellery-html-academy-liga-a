@@ -58,7 +58,6 @@
   &--user-2 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    margin-bottom: 20px;
   }
 
   &--user-3 {
@@ -66,10 +65,19 @@
     grid-column: 2 / 3;
   }
 
+  &--user-4 {
+    margin-bottom: 36px;
+  }
+
   &--user-5 {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     margin-top: -37px;
+    margin-right: 15px;
+  }
+
+  &--user-6 {
+    margin-bottom: 11px;
   }
 
   &--user-7 {
@@ -80,6 +88,8 @@
 
 .follow-us__item img {
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: $tablet-width) {
@@ -97,6 +107,10 @@
   }
 
   .follow-us__item {
+    &--user-4 {
+      margin-bottom: 24px;
+    }
+
     &--user-5 {
       max-width: 93.5%;
       margin-top: -21px;

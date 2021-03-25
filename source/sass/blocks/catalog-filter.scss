@@ -87,6 +87,7 @@
 .catalog-filter__item label {
   position: relative;
   letter-spacing: -0.07em;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -111,6 +112,10 @@
   &::before {
     background-color: #a87b62;
   }
+}
+
+.catalog-filter input[type="checkbox"]:focus + label {
+  color: #a87b62;
 }
 
 .catalog-filter input[type="checkbox"]:active + label {

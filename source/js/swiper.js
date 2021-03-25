@@ -132,4 +132,4 @@ Swiper.use([Navigation, Pagination]);
     initCartSwiper();
     initProductsSwiper();
   });
-})();
+}());

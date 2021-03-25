@@ -7,7 +7,7 @@
   var mainNav = document.querySelector('.main-nav');
 
   if (modalLogin) {
-    var loginButton = document.querySelector('.main-nav__login');
+    var loginButton = document.querySelector('.main-nav__sublink--login');
     var loginCloseButton = modalLogin.querySelector('.login-form__close');
     var loginForm = modalLogin.querySelector('.login-form');
     var userEmail = modalLogin.querySelector('input[type=email]');
@@ -18,7 +18,7 @@
     var storagePassword = '';
 
     var overlayClickHandle = function (evt) {
-      if (modalLogin.classList.contains('modal--show') && !evt.target.classList.contains('main-nav__login')) {
+      if (modalLogin.classList.contains('modal--show') && !evt.target.classList.contains('main-nav__sublink--login')) {
         modalLogin.classList.remove('modal--show');
         modalLogin.classList.remove('modal--error');
         body.classList.remove('page-body--block-modal');
@@ -134,4 +134,4 @@
       }
     });
   }
-})();
+}());

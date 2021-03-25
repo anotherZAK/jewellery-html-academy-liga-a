@@ -13,7 +13,6 @@
   font-size: 14px;
   line-height: 21px;
   font-family: $main-font;
-  color: #9b9997;
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -38,9 +37,10 @@
 
 .login-form__forgot-link {
   display: block;
+  width: fit-content;
   margin-bottom: 44px;
+  margin-left: auto;
   font-size: 12px;
-  text-align: right;
   color: #9b9997;
 
   &:hover {

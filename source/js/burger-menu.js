@@ -20,4 +20,4 @@
     var mainNavListCompute = getComputedStyle(mainNavList);
     body.style.setProperty('--element-height', 2.2 * parseFloat(mainNavListCompute.height) + 'px');
   });
-})();
+}());
