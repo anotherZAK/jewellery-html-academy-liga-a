@@ -19,6 +19,7 @@
   &--nojs {
     position: static;
     transform: translateY(0);
+    margin-top: 15px;
   }
 
   &--login {
@@ -115,6 +116,10 @@
       width: calc(100% - 30px);
       height: 519px;
       max-width: 380px;
+
+      &::after {
+        bottom: 297px;
+      }
     }
 
     &--login > p {

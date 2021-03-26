@@ -24,6 +24,6 @@ trim_trailing_whitespace = false
 [*main.js]
 insert_final_newline = false
 
-[*vendor.js]
+[*vendors.js]
 trim_trailing_whitespace = false
 insert_final_newline = false

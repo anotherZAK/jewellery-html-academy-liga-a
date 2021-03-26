@@ -46,7 +46,8 @@
   grid-template-columns: 19.66% 34.19% 19.83% 19.83%;
   column-gap: 30px;
   row-gap: 30px;
-  margin: 0;
+  max-width: 1170px;
+  margin: 0 auto;
   margin-top: 64px;
   padding: 0;
   list-style: none;
@@ -104,7 +105,7 @@
   .follow-us__list {
     column-gap: 18px;
     row-gap: 18px;
-    margin-top: 66px;
+    margin-top: 64px;
   }
 
   .follow-us__item {
@@ -147,7 +148,7 @@
 
 @media (max-width: $mobile-width) {
   .follow-us {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 
   .follow-us__list {

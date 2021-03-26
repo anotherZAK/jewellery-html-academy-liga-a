@@ -15,18 +15,18 @@ var mainConfig = Object.assign({}, config, {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'source/js'),
-    iife: true,
+    iife: false,
   },
   devtool: false
 });
 
 var vendorConfig = Object.assign({}, config, {
-  name: 'vendor',
+  name: 'vendors',
   entry: './source/js/swiper.js',
   output: {
-    filename: 'vendor.js',
+    filename: 'vendors.js',
     path: path.resolve(__dirname, 'source/js'),
-    iife: true,
+    iife: false,
   },
   devtool: false
 });

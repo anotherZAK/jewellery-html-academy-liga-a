@@ -5,10 +5,14 @@
   var burgerToggle = document.querySelector('.burger');
   var mainNav = document.querySelector('.main-nav');
   var pageHeader = document.querySelector('.page-header');
+  var detailedGallery = document.querySelector('.product-detailed');
 
   mainNav.classList.remove('main-nav--nojs');
-  pageHeader.classList.add('page-header--js');
+  if (detailedGallery) {
+    detailedGallery.classList.remove('product-detailed--nojs');
+  }
 
+  pageHeader.classList.add('page-header--js');
 
   burgerToggle.addEventListener('click', function () {
     body.classList.toggle('page-body--fixed');

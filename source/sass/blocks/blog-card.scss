@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
   min-width: 50%;
   padding-top: 12%;
   padding-bottom: 10px;
@@ -85,12 +86,12 @@
   }
 
   .blog-card__textgroup {
-    padding-top: 10%;
+    padding-top: 66px;
 
     &--big {
       position: static;
       height: auto;
-      padding-top: 12.5%;
+      padding-top: 82px;
       order: 1;
     }
   }

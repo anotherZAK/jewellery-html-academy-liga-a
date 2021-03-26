@@ -108,6 +108,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .newsletter {
+    margin-bottom: 49px;
+  }
+
   .newsletter h2,
   .newsletter p {
     max-width: 80%;

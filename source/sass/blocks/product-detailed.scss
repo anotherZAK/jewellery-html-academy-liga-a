@@ -163,9 +163,14 @@
   .product-detailed {
     display: block;
     margin-bottom: 54px;
+
+    &--nojs {
+      margin-top: 10px;
+    }
   }
 
   .product-detailed__gallery {
+    margin-top: 0;
     margin-right: 0;
     margin-bottom: 40px;
 
