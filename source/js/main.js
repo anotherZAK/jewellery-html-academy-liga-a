@@ -29,7 +29,7 @@ var __webpack_exports__ = {};
     var mainNavList = mainNav.querySelector('.main-nav__list');
 
     var mainNavListCompute = getComputedStyle(mainNavList);
-    body.style.setProperty('--element-height', 2.2 * parseFloat(mainNavListCompute.height) + 'px');
+    body.style.setProperty('--element-height', 1.5 * parseFloat(mainNavListCompute.height) + 'px');
   });
 }());
 

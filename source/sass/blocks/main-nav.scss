@@ -104,7 +104,7 @@
 .main-nav__item {
   margin-right: 26px;
 
-  &:last-child {
+  &--submenu {
     margin-right: 0;
     width: 0;
   }
@@ -425,25 +425,28 @@
     margin-top: 0;
   }
 
-  .main-nav__item {
+  .main-nav__list {
     position: relative;
-    margin-right: 0;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-top: 45px;
-      width: auto;
-    }
 
     &::after {
       position: absolute;
       content: "";
       top: -290px;
-      left: -485px;
       width: 1520px;
-      height: 675%;
+      height: 810%;
       background-color: #a87b62;
       z-index: -10;
+    }
+  }
+
+  .main-nav__item {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &--submenu {
+      margin-top: 45px;
+      width: auto;
     }
   }
 
@@ -499,7 +502,7 @@
       }
 
       .main-nav__item {
-        &:last-child {
+        &--submenu {
           margin-top: 34px;
           width: auto;
         }
